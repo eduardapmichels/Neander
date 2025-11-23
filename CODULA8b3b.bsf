@@ -18,4 +18,26 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 */
-(header "graphic" (version "1.4"))
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 144 112)
+	(text "CODULA8b3b" (rect 5 0 84 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "E[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "E[7..0]" (rect 21 27 56 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "S[2..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[2..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+)
