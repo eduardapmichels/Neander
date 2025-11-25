@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 528 8 696 24)
+	(rect 168 8 336 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "E[3..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "E[3..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 520 536 696 552)
+	(rect 168 536 344 552)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "S[15..0]" (rect 90 0 128 12)(font "Arial" ))
 	(pt 0 8)
@@ -52,7 +52,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 584 40 632 72)
+	(rect 224 40 272 72)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 21 20 33)(font "Arial" ))
 	(port
@@ -1229,14 +1229,14 @@ applicable agreement for further details.
 	(pt 1264 456)
 )
 (connector
-	(text "E[3..0]" (rect 542 40 575 52)(font "Arial" ))
-	(pt 584 56)
-	(pt 504 56)
+	(text "E[3..0]" (rect 182 40 215 52)(font "Arial" ))
+	(pt 224 56)
+	(pt 144 56)
 	(bus)
 )
 (connector
-	(text "NE[3..0]" (rect 659 40 700 52)(font "Arial" ))
-	(pt 632 56)
-	(pt 712 56)
+	(text "NE[3..0]" (rect 299 40 340 52)(font "Arial" ))
+	(pt 272 56)
+	(pt 352 56)
 	(bus)
 )

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY teste_ula_cod_decod
+set_global_assignment -name TOP_LEVEL_ENTITY PC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:53:25  NOVEMBER 22, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -55,13 +55,16 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BDF_FILE zero.bdf
 set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE runstep.bdf
 set_global_assignment -name BDF_FILE RCA8b.bdf
 set_global_assignment -name BDF_FILE OR8b.bdf
 set_global_assignment -name BDF_FILE NOT8b.bdf
 set_global_assignment -name BDF_FILE NEG.bdf
+set_global_assignment -name BDF_FILE Neander.bdf
 set_global_assignment -name BDF_FILE MUX2b1b.bdf
 set_global_assignment -name BDF_FILE MUX16b8b.bdf
 set_global_assignment -name BDF_FILE FullAdder.bdf
+set_global_assignment -name BDF_FILE DivClock.bdf
 set_global_assignment -name BDF_FILE displayG.bdf
 set_global_assignment -name BDF_FILE displayF.bdf
 set_global_assignment -name BDF_FILE displayE.bdf
@@ -69,19 +72,18 @@ set_global_assignment -name BDF_FILE displayD.bdf
 set_global_assignment -name BDF_FILE displayC.bdf
 set_global_assignment -name BDF_FILE displayB.bdf
 set_global_assignment -name BDF_FILE displayA.bdf
+set_global_assignment -name BDF_FILE DISPLAY.bdf
+set_global_assignment -name BDF_FILE DECOD4b16b.bdf
+set_global_assignment -name BDF_FILE CODULA8b3b.bdf
 set_global_assignment -name BDF_FILE BCDConverter.bdf
 set_global_assignment -name BDF_FILE AND8b.bdf
-set_global_assignment -name BDF_FILE CODULA8b3b.bdf
-set_global_assignment -name BDF_FILE Neander.bdf
-set_global_assignment -name BDF_FILE DISPLAY.bdf
-set_global_assignment -name BDF_FILE DECOD.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE decod_test.vwf
-set_global_assignment -name BDF_FILE teste_dec_cod.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_dec_cod.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ula_test.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste.vwf
-set_global_assignment -name BDF_FILE teste_ula_cod_decod.bdf
+set_global_assignment -name BDF_FILE CONT3b.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name BDF_FILE TEMPORIZADOR.bdf
+set_global_assignment -name BDF_FILE DECOD3b8b.bdf
+set_global_assignment -name BDF_FILE PC.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
