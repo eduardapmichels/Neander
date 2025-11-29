@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "11/25/2025 19:25:29"
+// DATE "11/29/2025 18:20:19"
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -30,12 +30,12 @@
 
 module PC (
 	PC,
-	nreset,
+	reset,
 	clk,
 	Carga,
 	Sel);
 output 	[7:0] PC;
-input 	nreset;
+input 	reset;
 input 	clk;
 input 	[7:0] Carga;
 input 	Sel;
@@ -51,7 +51,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \Carga[0]~input_o ;
 wire \PC[7]~output_o ;
 wire \PC[6]~output_o ;
 wire \PC[5]~output_o ;
@@ -64,8 +63,9 @@ wire \clk~input_o ;
 wire \Carga[7]~input_o ;
 wire \Sel~input_o ;
 wire \Carga[1]~input_o ;
-wire \inst38~0_combout ;
-wire \nreset~input_o ;
+wire \Carga[0]~input_o ;
+wire \inst1|inst3~0_combout ;
+wire \reset~input_o ;
 wire \inst38~q ;
 wire \inst2|inst3~0_combout ;
 wire \inst44~q ;
@@ -226,36 +226,45 @@ defparam \Carga[1]~input .bus_hold = "false";
 defparam \Carga[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneiii_lcell_comb \inst38~0 (
-// Equation(s):
-// \inst38~0_combout  = !\inst38~q 
-
-	.dataa(\inst38~q ),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\inst38~0_combout ),
-	.cout());
+cycloneiii_io_ibuf \Carga[0]~input (
+	.i(Carga[0]),
+	.ibar(gnd),
+	.o(\Carga[0]~input_o ));
 // synopsys translate_off
-defparam \inst38~0 .lut_mask = 16'h5555;
-defparam \inst38~0 .sum_lutc_input = "datac";
+defparam \Carga[0]~input .bus_hold = "false";
+defparam \Carga[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneiii_io_ibuf \nreset~input (
-	.i(nreset),
-	.ibar(gnd),
-	.o(\nreset~input_o ));
+cycloneiii_lcell_comb \inst1|inst3~0 (
+// Equation(s):
+// \inst1|inst3~0_combout  = (\Sel~input_o  & ((!\inst38~q ))) # (!\Sel~input_o  & (\Carga[0]~input_o ))
+
+	.dataa(\Carga[0]~input_o ),
+	.datab(gnd),
+	.datac(\Sel~input_o ),
+	.datad(\inst38~q ),
+	.cin(gnd),
+	.combout(\inst1|inst3~0_combout ),
+	.cout());
 // synopsys translate_off
-defparam \nreset~input .bus_hold = "false";
-defparam \nreset~input .simulate_z_as = "z";
+defparam \inst1|inst3~0 .lut_mask = 16'h0AFA;
+defparam \inst1|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiii_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
 // synopsys translate_on
 
 dffeas inst38(
 	.clk(\clk~input_o ),
-	.d(\inst38~0_combout ),
+	.d(\inst1|inst3~0_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -289,7 +298,7 @@ dffeas inst44(
 	.clk(\clk~input_o ),
 	.d(\inst2|inst3~0_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -348,7 +357,7 @@ dffeas inst34(
 	.clk(\clk~input_o ),
 	.d(\inst3|inst3~1_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -407,7 +416,7 @@ dffeas inst39(
 	.clk(\clk~input_o ),
 	.d(\inst4|inst3~0_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -466,7 +475,7 @@ dffeas inst35(
 	.clk(\clk~input_o ),
 	.d(\inst5|inst3~0_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -525,7 +534,7 @@ dffeas inst40(
 	.clk(\clk~input_o ),
 	.d(\inst6|inst3~1_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -584,7 +593,7 @@ dffeas inst37(
 	.clk(\clk~input_o ),
 	.d(\inst7|inst3~1_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -634,7 +643,7 @@ dffeas inst49(
 	.clk(\clk~input_o ),
 	.d(\inst9|inst3~1_combout ),
 	.asdata(vcc),
-	.clrn(\nreset~input_o ),
+	.clrn(!\reset~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -646,15 +655,6 @@ dffeas inst49(
 // synopsys translate_off
 defparam inst49.is_wysiwyg = "true";
 defparam inst49.power_up = "low";
-// synopsys translate_on
-
-cycloneiii_io_ibuf \Carga[0]~input (
-	.i(Carga[0]),
-	.ibar(gnd),
-	.o(\Carga[0]~input_o ));
-// synopsys translate_off
-defparam \Carga[0]~input .bus_hold = "false";
-defparam \Carga[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 assign PC[7] = \PC[7]~output_o ;

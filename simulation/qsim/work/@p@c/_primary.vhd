@@ -3,7 +3,7 @@ use verilog.vl_types.all;
 entity PC is
     port(
         PC              : out    vl_logic_vector(7 downto 0);
-        nreset          : in     vl_logic;
+        reset           : in     vl_logic;
         clk             : in     vl_logic;
         Carga           : in     vl_logic_vector(7 downto 0);
         Sel             : in     vl_logic

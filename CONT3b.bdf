@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 896 560 1064 576)
+	(rect 880 536 1048 552)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "nreset" (rect 5 0 36 12)(font "Arial" ))
+	(text "reset" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -352,11 +352,6 @@ applicable agreement for further details.
 	(pt 392 488)
 )
 (connector
-	(text "nreset" (rect 416 486 428 516)(font "Arial" )(vertical))
-	(pt 432 456)
-	(pt 432 528)
-)
-(connector
 	(pt 512 344)
 	(pt 320 344)
 )
@@ -376,11 +371,6 @@ applicable agreement for further details.
 	(text "clk" (rect 703 434 715 448)(font "Arial" )(vertical))
 	(pt 720 416)
 	(pt 720 488)
-)
-(connector
-	(text "nreset" (rect 744 502 756 532)(font "Arial" )(vertical))
-	(pt 760 456)
-	(pt 760 544)
 )
 (connector
 	(pt 720 400)
@@ -422,11 +412,6 @@ applicable agreement for further details.
 	(text "clk" (rect 1160 468 1172 482)(font "Arial" )(vertical))
 	(pt 1176 496)
 	(pt 1176 440)
-)
-(connector
-	(text "nreset" (rect 1200 502 1212 532)(font "Arial" )(vertical))
-	(pt 1216 480)
-	(pt 1216 544)
 )
 (connector
 	(pt 1016 336)
@@ -490,16 +475,45 @@ applicable agreement for further details.
 	(pt 512 304)
 )
 (connector
-	(text "Count[1]" (rect 832 367 844 409)(font "Arial" )(vertical))
+	(text "reset" (rect 416 486 428 510)(font "Arial" )(vertical))
+	(pt 432 456)
+	(pt 432 528)
+)
+(connector
+	(text "reset" (rect 744 502 756 526)(font "Arial" )(vertical))
+	(pt 760 456)
+	(pt 760 544)
+)
+(connector
+	(text "reset" (rect 1200 502 1212 526)(font "Arial" )(vertical))
+	(pt 1216 480)
+	(pt 1216 544)
+)
+(connector
+	(pt 848 216)
+	(pt 848 336)
+)
+(connector
+	(text "Count[1]" (rect 824 239 836 281)(font "Arial" )(vertical))
 	(pt 848 336)
 	(pt 848 400)
 )
 (connector
-	(text "Count[2]" (rect 1256 391 1268 433)(font "Arial" )(vertical))
-	(pt 1272 424)
+	(pt 1272 256)
+	(pt 1280 256)
+)
+(connector
+	(text "Count[2]" (rect 1248 271 1260 313)(font "Arial" )(vertical))
+	(pt 1272 256)
 	(pt 1272 336)
+)
+(connector
+	(pt 1272 336)
+	(pt 1272 424)
 )
 (junction (pt 848 400))
 (junction (pt 512 304))
 (junction (pt 512 344))
 (junction (pt 512 400))
+(junction (pt 848 336))
+(junction (pt 1272 336))

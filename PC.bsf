@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "nreset" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "nreset" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 27 50 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
