@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 144 112)
+	(rect 16 16 176 112)
 	(text "SpecReg8b" (rect 5 0 71 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -40,18 +40,18 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "CLR" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLR" (rect 21 59 44 73)(font "Arial" (font_size 8)))
+		(text "cargaenable" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "cargaenable" (rect 21 59 91 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 128 32)
+		(pt 160 32)
 		(output)
 		(text "S[0..7]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[0..7]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
+		(text "S[0..7]" (rect 103 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 80))
+		(rectangle (rect 16 16 144 80))
 	)
 )

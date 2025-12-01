@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 168 264 336 280)
+	(rect 168 304 336 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "step" (rect 5 0 27 12)(font "Arial" ))
+	(text "step" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 376 264 544 280)
+	(rect 376 304 544 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 560 264 728 280)
+	(rect 560 304 728 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "mode" (rect 5 0 33 12)(font "Arial" ))
+	(text "mode" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 368 296 544 312)
+	(rect 368 336 544 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 90 0 115 12)(font "Arial" ))
 	(pt 0 8)
@@ -234,10 +234,6 @@ applicable agreement for further details.
 	(pt 704 104)
 )
 (connector
-	(pt 472 120)
-	(pt 544 120)
-)
-(connector
 	(text "clk" (rect 272 188 284 202)(font "Arial" )(vertical))
 	(pt 288 216)
 	(pt 288 128)
@@ -250,6 +246,10 @@ applicable agreement for further details.
 	(text "step" (rect 189 96 210 108)(font "Arial" ))
 	(pt 320 112)
 	(pt 184 112)
+)
+(connector
+	(pt 472 120)
+	(pt 544 120)
 )
 (connector
 	(pt 384 112)

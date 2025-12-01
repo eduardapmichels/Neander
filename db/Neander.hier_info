@@ -1,100 +1,14 @@
-|PC
-PC[0] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
-PC[1] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
-PC[2] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
-PC[3] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
-PC[4] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
-PC[5] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
-PC[6] <= inst37.DB_MAX_OUTPUT_PORT_TYPE
-PC[7] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
-reset => inst.IN0
-clk => inst38.CLK
-clk => inst44.CLK
-clk => inst34.CLK
-clk => inst39.CLK
-clk => inst35.CLK
-clk => inst40.CLK
-clk => inst37.CLK
-clk => inst49.CLK
-Carga[0] => MUX2b1b:inst1.A
-Carga[1] => MUX2b1b:inst2.A
-Carga[2] => MUX2b1b:inst3.A
-Carga[3] => MUX2b1b:inst4.A
-Carga[4] => MUX2b1b:inst5.A
-Carga[5] => MUX2b1b:inst6.A
-Carga[6] => MUX2b1b:inst7.A
-Carga[7] => MUX2b1b:inst9.A
-Sel => MUX2b1b:inst1.S
-Sel => MUX2b1b:inst2.S
-Sel => MUX2b1b:inst3.S
-Sel => MUX2b1b:inst4.S
-Sel => MUX2b1b:inst5.S
-Sel => MUX2b1b:inst6.S
-Sel => MUX2b1b:inst7.S
-Sel => MUX2b1b:inst9.S
-
-
-|PC|MUX2b1b:inst1
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst2
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst3
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst4
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst5
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst6
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst7
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
-
-
-|PC|MUX2b1b:inst9
-Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst1.IN0
-S => inst1.IN1
-S => inst2.IN0
-A => inst.IN0
+|CODULA8b3b
+S[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+UALADD => inst2.IN0
+UALADD => inst.IN0
+UALNOT => inst2.IN1
+UALNOT => inst3.IN1
+UALY => inst2.IN2
+UALAND => inst.IN1
+UALAND => inst3.IN0
+UALOR => inst3.IN2
 
 

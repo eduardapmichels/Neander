@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 528 480 696 496)
+	(rect 264 608 432 624)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Clk" (rect 5 0 22 12)(font "Arial" ))
+	(text "nCLR" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,25 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 496 528 664 544)
+	(rect 272 472 440 488)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 28 12)(font "Arial" ))
+	(text "Clk" (rect 5 0 21 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 240 496 408 512)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "cargaenable" (rect 5 0 65 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -498,6 +514,63 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 480 464 544 512)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 448 600 496 632)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(text "E[0]" (rect 865 120 885 132)(font "Arial" ))
 	(pt 904 136)
@@ -579,10 +652,6 @@ applicable agreement for further details.
 	(pt 1024 864)
 )
 (connector
-	(pt 696 488)
-	(pt 736 488)
-)
-(connector
 	(pt 904 880)
 	(pt 736 880)
 )
@@ -615,15 +684,7 @@ applicable agreement for further details.
 	(pt 736 464)
 )
 (connector
-	(pt 736 464)
-	(pt 736 488)
-)
-(connector
 	(pt 904 568)
-	(pt 736 568)
-)
-(connector
-	(pt 736 488)
 	(pt 736 568)
 )
 (connector
@@ -822,7 +883,39 @@ applicable agreement for further details.
 	(pt 936 920)
 	(pt 936 928)
 )
-(junction (pt 736 488))
+(connector
+	(pt 480 480)
+	(pt 440 480)
+)
+(connector
+	(pt 544 488)
+	(pt 736 488)
+)
+(connector
+	(pt 736 464)
+	(pt 736 488)
+)
+(connector
+	(pt 736 488)
+	(pt 736 568)
+)
+(connector
+	(pt 480 496)
+	(pt 408 496)
+)
+(connector
+	(pt 408 496)
+	(pt 408 504)
+)
+(connector
+	(pt 432 616)
+	(pt 448 616)
+)
+(connector
+	(text "CLR" (rect 504 600 526 612)(font "Arial" ))
+	(pt 496 616)
+	(pt 600 616)
+)
 (junction (pt 736 256))
 (junction (pt 736 360))
 (junction (pt 736 464))
@@ -836,3 +929,4 @@ applicable agreement for further details.
 (junction (pt 704 520))
 (junction (pt 704 624))
 (junction (pt 704 728))
+(junction (pt 736 488))
