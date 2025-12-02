@@ -1,10 +1,10 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work Neander.vo
-vlog -work work Waveform2.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.LAB09_vlg_vec_tst -voptargs="+acc"
+vlog -work work neanderregistradoresecargas.vwf.vt
+vsim -novopt -c -t 1ps -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.neander_vlg_vec_tst -voptargs="+acc"
 vcd file -direction Neander.msim.vcd
-vcd add -internal LAB09_vlg_vec_tst/*
-vcd add -internal LAB09_vlg_vec_tst/i1/*
+vcd add -internal neander_vlg_vec_tst/*
+vcd add -internal neander_vlg_vec_tst/i1/*
 run -all
 quit -f

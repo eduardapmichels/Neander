@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 56 104 72)
+	(rect -64 88 104 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "goto_t0" (rect 5 0 41 12)(font "Arial" ))
+	(text "hlt" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 88 104 104)
+	(rect 112 288 280 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "hlt" (rect 5 0 16 12)(font "Arial" ))
+	(text "goto_t0" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -196,93 +196,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 160 56 224 104)
-	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 15 32))
-	)
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 15 16))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 48 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 36)(pt 25 36))
-		(line (pt 14 13)(pt 25 13))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
-	)
-)
-(symbol
-	(rect 224 64 272 96)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 312 152 456 248)
-	(text "CONT3b" (rect 5 0 52 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 27 50 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "Count[2..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "Count[2..0]" (rect 62 27 123 41)(font "Arial" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 80))
-	)
-)
-(symbol
 	(rect 536 240 664 336)
 	(text "DECOD3b8b" (rect 5 0 74 14)(font "Arial" (font_size 8)))
 	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
@@ -304,49 +217,41 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 112 80))
 	)
 )
-(connector
-	(text "<<__$DEF_ALIAS45>>" (rect 189 184 301 196)(font "Arial" )(invisible))
-	(pt 312 200)
-	(pt 176 200)
-)
-(connector
-	(pt 312 184)
-	(pt 272 184)
-)
-(connector
-	(text "hlt" (rect 123 80 134 92)(font "Arial" ))
-	(pt 112 96)
-	(pt 104 96)
-)
-(connector
-	(pt 176 72)
-	(pt 160 72)
-)
-(connector
-	(pt 176 64)
-	(pt 176 72)
-)
-(connector
-	(pt 112 96)
-	(pt 112 88)
-)
-(connector
-	(pt 112 88)
-	(pt 160 88)
-)
-(connector
-	(text "goto_t0" (rect 120 48 156 60)(font "Arial" ))
-	(pt 104 64)
-	(pt 176 64)
-)
-(connector
-	(pt 272 184)
-	(pt 272 80)
-)
-(connector
-	(pt 456 184)
-	(pt 536 184)
-	(bus)
+(symbol
+	(rect 336 152 488 248)
+	(text "CONT3b" (rect 5 0 52 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "rst" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "rst" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "gotot0" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "gotot0" (rect 21 59 56 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "Count[2..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "Count[2..0]" (rect 70 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
 )
 (connector
 	(pt 536 184)
@@ -398,5 +303,36 @@ applicable agreement for further details.
 	(pt 664 272)
 	(pt 736 272)
 	(bus)
+)
+(connector
+	(pt 336 96)
+	(pt 336 184)
+)
+(connector
+	(text "<<__$DEF_ALIAS45>>" (rect 189 184 301 196)(font "Arial" )(invisible))
+	(pt 336 200)
+	(pt 176 200)
+)
+(connector
+	(pt 336 216)
+	(pt 288 216)
+)
+(connector
+	(text "<<__$DEF_ALIAS421>>" (rect 272 225 284 343)(font "Arial" )(vertical)(invisible))
+	(pt 288 296)
+	(pt 288 216)
+)
+(connector
+	(pt 288 296)
+	(pt 280 296)
+)
+(connector
+	(pt 488 184)
+	(pt 536 184)
+	(bus)
+)
+(connector
+	(pt 104 96)
+	(pt 336 96)
 )
 (text "Contador reseta se goto_t0 e hlt = " (rect 296 24 493 38)(font "Arial" (font_size 8)))

@@ -159,9 +159,16 @@ applicable agreement for further details.
 	(port
 		(pt 184 272)
 		(output)
-		(text "hlt" (rect 0 0 12 14)(font "Arial" (font_size 8)))
-		(text "hlt" (rect 151 267 163 281)(font "Arial" (font_size 8)))
+		(text "gt0" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "gt0" (rect 146 267 163 281)(font "Arial" (font_size 8)))
 		(line (pt 184 272)(pt 168 272))
+	)
+	(port
+		(pt 184 288)
+		(output)
+		(text "hlt" (rect 0 0 12 14)(font "Arial" (font_size 8)))
+		(text "hlt" (rect 151 283 163 297)(font "Arial" (font_size 8)))
+		(line (pt 184 288)(pt 168 288))
 	)
 	(drawing
 		(rectangle (rect 16 16 168 304))

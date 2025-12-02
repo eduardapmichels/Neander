@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 168 8 336 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "E[7..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "E[7..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -834,86 +834,6 @@ applicable agreement for further details.
 	(pt 208 152)
 )
 (connector
-	(text "NE[3]" (rect 21 112 49 124)(font "Arial" ))
-	(pt 72 128)
-	(pt 8 128)
-)
-(connector
-	(text "NE[2]" (rect -12 128 16 140)(font "Arial" ))
-	(pt -24 144)
-	(pt 72 144)
-)
-(connector
-	(text "NE[1]" (rect -53 144 -25 156)(font "Arial" ))
-	(pt -56 160)
-	(pt 72 160)
-)
-(connector
-	(text "NE[0]" (rect -86 160 -58 172)(font "Arial" ))
-	(pt -96 176)
-	(pt 72 176)
-)
-(connector
-	(text "NE[3]" (rect 21 216 49 228)(font "Arial" ))
-	(pt 72 232)
-	(pt 8 232)
-)
-(connector
-	(text "NE[2]" (rect -12 232 16 244)(font "Arial" ))
-	(pt -24 248)
-	(pt 72 248)
-)
-(connector
-	(text "NE[1]" (rect -53 248 -25 260)(font "Arial" ))
-	(pt -56 264)
-	(pt 72 264)
-)
-(connector
-	(text "E[0]" (rect -86 264 -66 276)(font "Arial" ))
-	(pt -96 280)
-	(pt 72 280)
-)
-(connector
-	(text "NE[3]" (rect 21 320 49 332)(font "Arial" ))
-	(pt 72 336)
-	(pt 8 336)
-)
-(connector
-	(text "NE[2]" (rect -12 336 16 348)(font "Arial" ))
-	(pt -24 352)
-	(pt 72 352)
-)
-(connector
-	(text "NE[0]" (rect -86 368 -58 380)(font "Arial" ))
-	(pt -96 384)
-	(pt 72 384)
-)
-(connector
-	(text "NE[3]" (rect 21 416 49 428)(font "Arial" ))
-	(pt 72 432)
-	(pt 8 432)
-)
-(connector
-	(text "NE[2]" (rect -12 432 16 444)(font "Arial" ))
-	(pt -24 448)
-	(pt 72 448)
-)
-(connector
-	(text "E[0]" (rect -86 464 -66 476)(font "Arial" ))
-	(pt -96 480)
-	(pt 72 480)
-)
-(connector
-	(text "E[1]" (rect -53 352 -33 364)(font "Arial" ))
-	(pt -56 368)
-	(pt 72 368)
-)
-(connector
-	(text "E[1]" (rect -53 448 -33 460)(font "Arial" ))
-	(pt -56 464)
-	(pt 72 464)
-)
-(connector
 	(text "S[1]" (rect 165 240 185 252)(font "Arial" ))
 	(pt 136 256)
 	(pt 208 256)
@@ -927,86 +847,6 @@ applicable agreement for further details.
 	(text "S[3]" (rect 165 440 185 452)(font "Arial" ))
 	(pt 136 456)
 	(pt 208 456)
-)
-(connector
-	(text "NE[3]" (rect 381 112 409 124)(font "Arial" ))
-	(pt 432 128)
-	(pt 368 128)
-)
-(connector
-	(text "NE[1]" (rect 307 144 335 156)(font "Arial" ))
-	(pt 304 160)
-	(pt 432 160)
-)
-(connector
-	(text "NE[0]" (rect 274 160 302 172)(font "Arial" ))
-	(pt 264 176)
-	(pt 432 176)
-)
-(connector
-	(text "NE[3]" (rect 381 216 409 228)(font "Arial" ))
-	(pt 432 232)
-	(pt 368 232)
-)
-(connector
-	(text "NE[1]" (rect 307 248 335 260)(font "Arial" ))
-	(pt 304 264)
-	(pt 432 264)
-)
-(connector
-	(text "E[0]" (rect 274 264 294 276)(font "Arial" ))
-	(pt 264 280)
-	(pt 432 280)
-)
-(connector
-	(text "NE[3]" (rect 381 320 409 332)(font "Arial" ))
-	(pt 432 336)
-	(pt 368 336)
-)
-(connector
-	(text "NE[0]" (rect 274 368 302 380)(font "Arial" ))
-	(pt 264 384)
-	(pt 432 384)
-)
-(connector
-	(text "NE[3]" (rect 381 416 409 428)(font "Arial" ))
-	(pt 432 432)
-	(pt 368 432)
-)
-(connector
-	(text "E[0]" (rect 274 464 294 476)(font "Arial" ))
-	(pt 264 480)
-	(pt 432 480)
-)
-(connector
-	(text "E[1]" (rect 307 352 327 364)(font "Arial" ))
-	(pt 304 368)
-	(pt 432 368)
-)
-(connector
-	(text "E[1]" (rect 307 448 327 460)(font "Arial" ))
-	(pt 304 464)
-	(pt 432 464)
-)
-(connector
-	(text "E[2]" (rect 348 128 368 140)(font "Arial" ))
-	(pt 336 144)
-	(pt 432 144)
-)
-(connector
-	(text "E[2]" (rect 348 232 368 244)(font "Arial" ))
-	(pt 336 248)
-	(pt 432 248)
-)
-(connector
-	(text "E[2]" (rect 348 336 368 348)(font "Arial" ))
-	(pt 336 352)
-	(pt 432 352)
-)
-(connector
-	(text "E[2]" (rect 348 432 368 444)(font "Arial" ))
-	(pt 336 448)
-	(pt 432 448)
 )
 (connector
 	(text "S[4]" (rect 525 136 545 148)(font "Arial" ))
@@ -1029,86 +869,6 @@ applicable agreement for further details.
 	(pt 568 456)
 )
 (connector
-	(text "NE[2]" (rect 708 128 736 140)(font "Arial" ))
-	(pt 696 144)
-	(pt 792 144)
-)
-(connector
-	(text "NE[1]" (rect 667 144 695 156)(font "Arial" ))
-	(pt 664 160)
-	(pt 792 160)
-)
-(connector
-	(text "NE[0]" (rect 634 160 662 172)(font "Arial" ))
-	(pt 624 176)
-	(pt 792 176)
-)
-(connector
-	(text "NE[2]" (rect 708 232 736 244)(font "Arial" ))
-	(pt 696 248)
-	(pt 792 248)
-)
-(connector
-	(text "NE[1]" (rect 667 248 695 260)(font "Arial" ))
-	(pt 664 264)
-	(pt 792 264)
-)
-(connector
-	(text "E[0]" (rect 634 264 654 276)(font "Arial" ))
-	(pt 624 280)
-	(pt 792 280)
-)
-(connector
-	(text "NE[2]" (rect 708 336 736 348)(font "Arial" ))
-	(pt 696 352)
-	(pt 792 352)
-)
-(connector
-	(text "NE[0]" (rect 634 368 662 380)(font "Arial" ))
-	(pt 624 384)
-	(pt 792 384)
-)
-(connector
-	(text "NE[2]" (rect 708 432 736 444)(font "Arial" ))
-	(pt 696 448)
-	(pt 792 448)
-)
-(connector
-	(text "E[0]" (rect 634 464 654 476)(font "Arial" ))
-	(pt 624 480)
-	(pt 792 480)
-)
-(connector
-	(text "E[1]" (rect 667 352 687 364)(font "Arial" ))
-	(pt 664 368)
-	(pt 792 368)
-)
-(connector
-	(text "E[1]" (rect 667 448 687 460)(font "Arial" ))
-	(pt 664 464)
-	(pt 792 464)
-)
-(connector
-	(text "E[3]" (rect 741 112 761 124)(font "Arial" ))
-	(pt 792 128)
-	(pt 728 128)
-)
-(connector
-	(text "E[3]" (rect 741 216 761 228)(font "Arial" ))
-	(pt 792 232)
-	(pt 728 232)
-)
-(connector
-	(text "E[3]" (rect 741 320 761 332)(font "Arial" ))
-	(pt 792 336)
-	(pt 728 336)
-)
-(connector
-	(text "E[3]" (rect 741 416 761 428)(font "Arial" ))
-	(pt 792 432)
-	(pt 728 432)
-)
-(connector
 	(text "S[8]" (rect 885 136 905 148)(font "Arial" ))
 	(pt 856 152)
 	(pt 928 152)
@@ -1127,86 +887,6 @@ applicable agreement for further details.
 	(text "S[11]" (rect 885 440 910 452)(font "Arial" ))
 	(pt 856 456)
 	(pt 928 456)
-)
-(connector
-	(text "NE[1]" (rect 1003 144 1031 156)(font "Arial" ))
-	(pt 1000 160)
-	(pt 1128 160)
-)
-(connector
-	(text "NE[0]" (rect 970 160 998 172)(font "Arial" ))
-	(pt 960 176)
-	(pt 1128 176)
-)
-(connector
-	(text "NE[1]" (rect 1003 248 1031 260)(font "Arial" ))
-	(pt 1000 264)
-	(pt 1128 264)
-)
-(connector
-	(text "E[0]" (rect 970 264 990 276)(font "Arial" ))
-	(pt 960 280)
-	(pt 1128 280)
-)
-(connector
-	(text "NE[0]" (rect 970 368 998 380)(font "Arial" ))
-	(pt 960 384)
-	(pt 1128 384)
-)
-(connector
-	(text "E[0]" (rect 970 464 990 476)(font "Arial" ))
-	(pt 960 480)
-	(pt 1128 480)
-)
-(connector
-	(text "E[1]" (rect 1003 352 1023 364)(font "Arial" ))
-	(pt 1000 368)
-	(pt 1128 368)
-)
-(connector
-	(text "E[1]" (rect 1003 448 1023 460)(font "Arial" ))
-	(pt 1000 464)
-	(pt 1128 464)
-)
-(connector
-	(text "E[2]" (rect 1044 128 1064 140)(font "Arial" ))
-	(pt 1032 144)
-	(pt 1128 144)
-)
-(connector
-	(text "E[2]" (rect 1044 232 1064 244)(font "Arial" ))
-	(pt 1032 248)
-	(pt 1128 248)
-)
-(connector
-	(text "E[2]" (rect 1044 336 1064 348)(font "Arial" ))
-	(pt 1032 352)
-	(pt 1128 352)
-)
-(connector
-	(text "E[2]" (rect 1044 432 1064 444)(font "Arial" ))
-	(pt 1032 448)
-	(pt 1128 448)
-)
-(connector
-	(text "E[3]" (rect 1077 112 1097 124)(font "Arial" ))
-	(pt 1128 128)
-	(pt 1064 128)
-)
-(connector
-	(text "E[3]" (rect 1077 216 1097 228)(font "Arial" ))
-	(pt 1128 232)
-	(pt 1064 232)
-)
-(connector
-	(text "E[3]" (rect 1077 320 1097 332)(font "Arial" ))
-	(pt 1128 336)
-	(pt 1064 336)
-)
-(connector
-	(text "E[3]" (rect 1077 416 1097 428)(font "Arial" ))
-	(pt 1128 432)
-	(pt 1064 432)
 )
 (connector
 	(text "S[12]" (rect 1221 136 1246 148)(font "Arial" ))
@@ -1229,13 +909,333 @@ applicable agreement for further details.
 	(pt 1264 456)
 )
 (connector
-	(text "E[3..0]" (rect 182 40 215 52)(font "Arial" ))
+	(text "NE[7]" (rect 21 112 49 124)(font "Arial" ))
+	(pt 72 128)
+	(pt 8 128)
+)
+(connector
+	(text "NE[6]" (rect -12 128 16 140)(font "Arial" ))
+	(pt -24 144)
+	(pt 72 144)
+)
+(connector
+	(text "NE[5]" (rect -53 144 -25 156)(font "Arial" ))
+	(pt -56 160)
+	(pt 72 160)
+)
+(connector
+	(text "NE[4]" (rect -86 160 -58 172)(font "Arial" ))
+	(pt -96 176)
+	(pt 72 176)
+)
+(connector
+	(text "NE[7]" (rect 21 216 49 228)(font "Arial" ))
+	(pt 72 232)
+	(pt 8 232)
+)
+(connector
+	(text "NE[6]" (rect -12 232 16 244)(font "Arial" ))
+	(pt -24 248)
+	(pt 72 248)
+)
+(connector
+	(text "NE[5]" (rect -53 248 -25 260)(font "Arial" ))
+	(pt -56 264)
+	(pt 72 264)
+)
+(connector
+	(text "E[4]" (rect -86 264 -66 276)(font "Arial" ))
+	(pt -96 280)
+	(pt 72 280)
+)
+(connector
+	(text "NE[7]" (rect 21 320 49 332)(font "Arial" ))
+	(pt 72 336)
+	(pt 8 336)
+)
+(connector
+	(text "NE[6]" (rect -12 336 16 348)(font "Arial" ))
+	(pt -24 352)
+	(pt 72 352)
+)
+(connector
+	(text "E[5]" (rect -53 352 -33 364)(font "Arial" ))
+	(pt -56 368)
+	(pt 72 368)
+)
+(connector
+	(text "NE[4]" (rect -86 368 -58 380)(font "Arial" ))
+	(pt -96 384)
+	(pt 72 384)
+)
+(connector
+	(text "NE[7]" (rect 21 416 49 428)(font "Arial" ))
+	(pt 72 432)
+	(pt 8 432)
+)
+(connector
+	(text "NE[6]" (rect -12 432 16 444)(font "Arial" ))
+	(pt -24 448)
+	(pt 72 448)
+)
+(connector
+	(text "E[5]" (rect -53 448 -33 460)(font "Arial" ))
+	(pt -56 464)
+	(pt 72 464)
+)
+(connector
+	(text "E[4]" (rect -86 464 -66 476)(font "Arial" ))
+	(pt -96 480)
+	(pt 72 480)
+)
+(connector
+	(text "NE[7]" (rect 381 112 409 124)(font "Arial" ))
+	(pt 432 128)
+	(pt 368 128)
+)
+(connector
+	(text "E[6]" (rect 348 128 368 140)(font "Arial" ))
+	(pt 336 144)
+	(pt 432 144)
+)
+(connector
+	(text "NE[5]" (rect 307 144 335 156)(font "Arial" ))
+	(pt 304 160)
+	(pt 432 160)
+)
+(connector
+	(text "NE[4]" (rect 274 160 302 172)(font "Arial" ))
+	(pt 264 176)
+	(pt 432 176)
+)
+(connector
+	(text "NE[7]" (rect 381 216 409 228)(font "Arial" ))
+	(pt 432 232)
+	(pt 368 232)
+)
+(connector
+	(text "E[6]" (rect 348 232 368 244)(font "Arial" ))
+	(pt 336 248)
+	(pt 432 248)
+)
+(connector
+	(text "NE[5]" (rect 307 248 335 260)(font "Arial" ))
+	(pt 304 264)
+	(pt 432 264)
+)
+(connector
+	(text "E[4]" (rect 274 264 294 276)(font "Arial" ))
+	(pt 264 280)
+	(pt 432 280)
+)
+(connector
+	(text "NE[7]" (rect 381 320 409 332)(font "Arial" ))
+	(pt 432 336)
+	(pt 368 336)
+)
+(connector
+	(text "E[6]" (rect 348 336 368 348)(font "Arial" ))
+	(pt 336 352)
+	(pt 432 352)
+)
+(connector
+	(text "E[5]" (rect 307 352 327 364)(font "Arial" ))
+	(pt 304 368)
+	(pt 432 368)
+)
+(connector
+	(text "NE[4]" (rect 274 368 302 380)(font "Arial" ))
+	(pt 264 384)
+	(pt 432 384)
+)
+(connector
+	(text "NE[7]" (rect 381 416 409 428)(font "Arial" ))
+	(pt 432 432)
+	(pt 368 432)
+)
+(connector
+	(text "E[6]" (rect 348 432 368 444)(font "Arial" ))
+	(pt 336 448)
+	(pt 432 448)
+)
+(connector
+	(text "E[5]" (rect 307 448 327 460)(font "Arial" ))
+	(pt 304 464)
+	(pt 432 464)
+)
+(connector
+	(text "E[4]" (rect 274 464 294 476)(font "Arial" ))
+	(pt 264 480)
+	(pt 432 480)
+)
+(connector
+	(text "E[7]" (rect 741 112 761 124)(font "Arial" ))
+	(pt 792 128)
+	(pt 728 128)
+)
+(connector
+	(text "NE[6]" (rect 708 128 736 140)(font "Arial" ))
+	(pt 696 144)
+	(pt 792 144)
+)
+(connector
+	(text "NE[5]" (rect 667 144 695 156)(font "Arial" ))
+	(pt 664 160)
+	(pt 792 160)
+)
+(connector
+	(text "NE[4]" (rect 634 160 662 172)(font "Arial" ))
+	(pt 624 176)
+	(pt 792 176)
+)
+(connector
+	(text "E[7]" (rect 741 216 761 228)(font "Arial" ))
+	(pt 792 232)
+	(pt 728 232)
+)
+(connector
+	(text "NE[6]" (rect 708 232 736 244)(font "Arial" ))
+	(pt 696 248)
+	(pt 792 248)
+)
+(connector
+	(text "NE[5]" (rect 667 248 695 260)(font "Arial" ))
+	(pt 664 264)
+	(pt 792 264)
+)
+(connector
+	(text "E[4]" (rect 634 264 654 276)(font "Arial" ))
+	(pt 624 280)
+	(pt 792 280)
+)
+(connector
+	(text "E[7]" (rect 741 320 761 332)(font "Arial" ))
+	(pt 792 336)
+	(pt 728 336)
+)
+(connector
+	(text "NE[6]" (rect 708 336 736 348)(font "Arial" ))
+	(pt 696 352)
+	(pt 792 352)
+)
+(connector
+	(text "E[5]" (rect 667 352 687 364)(font "Arial" ))
+	(pt 664 368)
+	(pt 792 368)
+)
+(connector
+	(text "NE[4]" (rect 634 368 662 380)(font "Arial" ))
+	(pt 624 384)
+	(pt 792 384)
+)
+(connector
+	(text "E[7]" (rect 741 416 761 428)(font "Arial" ))
+	(pt 792 432)
+	(pt 728 432)
+)
+(connector
+	(text "NE[6]" (rect 708 432 736 444)(font "Arial" ))
+	(pt 696 448)
+	(pt 792 448)
+)
+(connector
+	(text "E[5]" (rect 667 448 687 460)(font "Arial" ))
+	(pt 664 464)
+	(pt 792 464)
+)
+(connector
+	(text "E[4]" (rect 634 464 654 476)(font "Arial" ))
+	(pt 624 480)
+	(pt 792 480)
+)
+(connector
+	(text "E[7]" (rect 1077 112 1097 124)(font "Arial" ))
+	(pt 1128 128)
+	(pt 1064 128)
+)
+(connector
+	(text "E[6]" (rect 1044 128 1064 140)(font "Arial" ))
+	(pt 1032 144)
+	(pt 1128 144)
+)
+(connector
+	(text "NE[5]" (rect 1003 144 1031 156)(font "Arial" ))
+	(pt 1000 160)
+	(pt 1128 160)
+)
+(connector
+	(text "NE[4]" (rect 970 160 998 172)(font "Arial" ))
+	(pt 960 176)
+	(pt 1128 176)
+)
+(connector
+	(text "E[7]" (rect 1077 216 1097 228)(font "Arial" ))
+	(pt 1128 232)
+	(pt 1064 232)
+)
+(connector
+	(text "E[6]" (rect 1044 232 1064 244)(font "Arial" ))
+	(pt 1032 248)
+	(pt 1128 248)
+)
+(connector
+	(text "NE[5]" (rect 1003 248 1031 260)(font "Arial" ))
+	(pt 1000 264)
+	(pt 1128 264)
+)
+(connector
+	(text "E[4]" (rect 970 264 990 276)(font "Arial" ))
+	(pt 960 280)
+	(pt 1128 280)
+)
+(connector
+	(text "E[7]" (rect 1077 320 1097 332)(font "Arial" ))
+	(pt 1128 336)
+	(pt 1064 336)
+)
+(connector
+	(text "E[6]" (rect 1044 336 1064 348)(font "Arial" ))
+	(pt 1032 352)
+	(pt 1128 352)
+)
+(connector
+	(text "E[5]" (rect 1003 352 1023 364)(font "Arial" ))
+	(pt 1000 368)
+	(pt 1128 368)
+)
+(connector
+	(text "NE[4]" (rect 970 368 998 380)(font "Arial" ))
+	(pt 960 384)
+	(pt 1128 384)
+)
+(connector
+	(text "E[7]" (rect 1077 416 1097 428)(font "Arial" ))
+	(pt 1128 432)
+	(pt 1064 432)
+)
+(connector
+	(text "E[6]" (rect 1044 432 1064 444)(font "Arial" ))
+	(pt 1032 448)
+	(pt 1128 448)
+)
+(connector
+	(text "E[5]" (rect 1003 448 1023 460)(font "Arial" ))
+	(pt 1000 464)
+	(pt 1128 464)
+)
+(connector
+	(text "E[4]" (rect 970 464 990 476)(font "Arial" ))
+	(pt 960 480)
+	(pt 1128 480)
+)
+(connector
+	(text "E[7..0]" (rect 182 40 215 52)(font "Arial" ))
 	(pt 224 56)
 	(pt 144 56)
 	(bus)
 )
 (connector
-	(text "NE[3..0]" (rect 299 40 340 52)(font "Arial" ))
+	(text "NE[7..0]" (rect 299 40 340 52)(font "Arial" ))
 	(pt 272 56)
 	(pt 352 56)
 	(bus)

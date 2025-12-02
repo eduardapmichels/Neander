@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 104 280 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Sel[2..0]" (rect 5 0 47 12)(font "Arial" ))
+	(text "Sel[2..0]" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -436,6 +436,42 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 112 80))
 	)
 )
+(symbol
+	(rect 720 192 848 288)
+	(text "MUX16b8b" (rect 5 0 66 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[7..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "A[7..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "B[7..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Sel" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "Sel" (rect 21 59 38 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "S[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[7..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+)
 (connector
 	(text "Sel[0]" (rect 504 272 516 300)(font "Arial" )(vertical))
 	(pt 520 272)
@@ -490,11 +526,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 928 400)
-	(pt 928 240)
-	(bus)
-)
-(connector
 	(text "X[7..0]" (rect 203 240 234 252)(font "Arial" ))
 	(pt 248 256)
 	(pt 192 256)
@@ -528,11 +559,6 @@ applicable agreement for further details.
 	(text "Y[7..0]" (rect 314 168 348 180)(font "Arial" ))
 	(pt 480 184)
 	(pt 296 184)
-	(bus)
-)
-(connector
-	(pt 656 240)
-	(pt 928 240)
 	(bus)
 )
 (connector
@@ -669,6 +695,41 @@ applicable agreement for further details.
 	(pt 1384 400)
 	(bus)
 )
+(connector
+	(pt 656 240)
+	(pt 720 240)
+	(bus)
+)
+(connector
+	(pt 928 224)
+	(pt 928 400)
+	(bus)
+)
+(connector
+	(pt 928 224)
+	(pt 848 224)
+	(bus)
+)
+(connector
+	(pt 720 256)
+	(pt 704 256)
+)
+(connector
+	(text "Sel[1]" (rect 688 312 700 340)(font "Arial" )(vertical))
+	(pt 704 256)
+	(pt 704 352)
+)
+(connector
+	(pt 720 224)
+	(pt 704 224)
+	(bus)
+)
+(connector
+	(text "X[7..0]" (rect 688 181 700 212)(font "Arial" )(vertical))
+	(pt 704 224)
+	(pt 704 160)
+	(bus)
+)
 (junction (pt 1160 520))
 (junction (pt 1160 400))
 (text "vem do acumulador" (rect 288 40 398 54)(font "Arial" (font_size 8)))
@@ -679,5 +740,4 @@ applicable agreement for further details.
 (text "flag se zero" (rect 856 72 924 86)(font "Arial" (font_size 8)))
 (text "flag se negativo" (rect 856 104 946 118)(font "Arial" (font_size 8)))
 (text "Não está fazendo a verificação para o bit 0" (rect 368 736 614 750)(font "Arial" (font_size 8)))
-(text "Não está fazendo a verificação para o bit 1" (rect 672 216 918 230)(font "Arial" (font_size 8)))
 (text "vem do codificador da ULA" (rect 288 104 442 118)(font "Arial" (font_size 8)))

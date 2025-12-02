@@ -21,6 +21,7 @@ entity LAB09 is
         UALOR           : out    vl_logic;
         UALNOT          : out    vl_logic;
         cargaNZ         : out    vl_logic;
-        hlt             : out    vl_logic
+        hlt             : out    vl_logic;
+        gt0             : out    vl_logic
     );
 end LAB09;

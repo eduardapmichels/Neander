@@ -8,6 +8,7 @@ entity LAB09_vlg_check_tst is
         cargaRDM        : in     vl_logic;
         cargaREM        : in     vl_logic;
         cargaRI         : in     vl_logic;
+        gt0             : in     vl_logic;
         hlt             : in     vl_logic;
         incrementaPC    : in     vl_logic;
         Read            : in     vl_logic;
