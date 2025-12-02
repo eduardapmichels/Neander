@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 744 8 912 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "EAC[7..0]" (rect 5 0 54 12)(font "Arial" ))
+	(text "EAC[7..0]" (rect 5 0 53 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 448 8 616 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "EPC[7..0]" (rect 5 0 54 12)(font "Arial" ))
+	(text "EPC[7..0]" (rect 5 0 53 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -338,146 +338,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 80 144))
 	)
-)
-(connector
-	(text "AC[0]" (rect 905 48 933 60)(font "Arial" ))
-	(pt 896 64)
-	(pt 944 64)
-)
-(connector
-	(text "AC[1]" (rect 905 64 933 76)(font "Arial" ))
-	(pt 896 80)
-	(pt 944 80)
-)
-(connector
-	(text "AC[2]" (rect 905 80 933 92)(font "Arial" ))
-	(pt 896 96)
-	(pt 944 96)
-)
-(connector
-	(text "AC[3]" (rect 905 96 933 108)(font "Arial" ))
-	(pt 896 112)
-	(pt 944 112)
-)
-(connector
-	(text "AC[4]" (rect 905 112 933 124)(font "Arial" ))
-	(pt 896 128)
-	(pt 944 128)
-)
-(connector
-	(text "AC[5]" (rect 905 128 933 140)(font "Arial" ))
-	(pt 896 144)
-	(pt 944 144)
-)
-(connector
-	(text "AC[6]" (rect 905 144 933 156)(font "Arial" ))
-	(pt 896 160)
-	(pt 944 160)
-)
-(connector
-	(text "AC[7]" (rect 905 224 933 236)(font "Arial" ))
-	(pt 896 240)
-	(pt 944 240)
-)
-(connector
-	(text "AC[8]" (rect 905 240 933 252)(font "Arial" ))
-	(pt 896 256)
-	(pt 944 256)
-)
-(connector
-	(text "AC[9]" (rect 905 256 933 268)(font "Arial" ))
-	(pt 896 272)
-	(pt 944 272)
-)
-(connector
-	(text "AC[10]" (rect 905 272 939 284)(font "Arial" ))
-	(pt 896 288)
-	(pt 944 288)
-)
-(connector
-	(text "AC[11]" (rect 905 288 939 300)(font "Arial" ))
-	(pt 896 304)
-	(pt 944 304)
-)
-(connector
-	(text "AC[12]" (rect 905 304 939 316)(font "Arial" ))
-	(pt 896 320)
-	(pt 944 320)
-)
-(connector
-	(text "AC[13]" (rect 905 320 939 332)(font "Arial" ))
-	(pt 896 336)
-	(pt 944 336)
-)
-(connector
-	(text "PC[0]" (rect 585 48 613 60)(font "Arial" ))
-	(pt 576 64)
-	(pt 624 64)
-)
-(connector
-	(text "PC[1]" (rect 585 64 613 76)(font "Arial" ))
-	(pt 576 80)
-	(pt 624 80)
-)
-(connector
-	(text "PC[2]" (rect 585 80 613 92)(font "Arial" ))
-	(pt 576 96)
-	(pt 624 96)
-)
-(connector
-	(text "PC[3]" (rect 585 96 613 108)(font "Arial" ))
-	(pt 576 112)
-	(pt 624 112)
-)
-(connector
-	(text "PC[4]" (rect 585 112 613 124)(font "Arial" ))
-	(pt 576 128)
-	(pt 624 128)
-)
-(connector
-	(text "PC[5]" (rect 585 128 613 140)(font "Arial" ))
-	(pt 576 144)
-	(pt 624 144)
-)
-(connector
-	(text "PC[6]" (rect 585 144 613 156)(font "Arial" ))
-	(pt 576 160)
-	(pt 624 160)
-)
-(connector
-	(text "PC[7]" (rect 585 224 613 236)(font "Arial" ))
-	(pt 576 240)
-	(pt 624 240)
-)
-(connector
-	(text "PC[8]" (rect 585 240 613 252)(font "Arial" ))
-	(pt 576 256)
-	(pt 624 256)
-)
-(connector
-	(text "PC[9]" (rect 585 256 613 268)(font "Arial" ))
-	(pt 576 272)
-	(pt 624 272)
-)
-(connector
-	(text "PC[10]" (rect 585 272 619 284)(font "Arial" ))
-	(pt 576 288)
-	(pt 624 288)
-)
-(connector
-	(text "PC[11]" (rect 585 288 619 300)(font "Arial" ))
-	(pt 576 304)
-	(pt 624 304)
-)
-(connector
-	(text "PC[12]" (rect 585 304 619 316)(font "Arial" ))
-	(pt 576 320)
-	(pt 624 320)
-)
-(connector
-	(text "PC[13]" (rect 585 320 619 332)(font "Arial" ))
-	(pt 576 336)
-	(pt 624 336)
 )
 (connector
 	(text "EPC[3..0]" (rect 423 48 471 60)(font "Arial" ))
