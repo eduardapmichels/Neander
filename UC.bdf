@@ -349,7 +349,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -96 1216 80 1232)
+	(rect -736 -736 -560 -720)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "HLT" (rect 9 0 29 12)(font "Arial" ))
 	(pt 176 8)
@@ -605,9 +605,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 152 1216 328 1232)
+	(rect 96 1232 272 1248)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "hlt" (rect 90 0 101 12)(font "Arial" ))
+	(text "hlts" (rect 90 0 107 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -2097,6 +2097,12 @@ applicable agreement for further details.
 	(pt -624 -384)
 )
 (connector
-	(pt 80 1224)
-	(pt 152 1224)
+	(text "hlt" (rect -518 -744 -507 -732)(font "Arial" ))
+	(pt -560 -728)
+	(pt -488 -728)
+)
+(connector
+	(text "hlt" (rect 33 1224 44 1236)(font "Arial" ))
+	(pt 96 1240)
+	(pt 0 1240)
 )

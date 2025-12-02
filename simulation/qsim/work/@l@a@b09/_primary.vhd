@@ -4,6 +4,8 @@ entity LAB09 is
     port(
         Write           : out    vl_logic;
         opcode          : in     vl_logic_vector(3 downto 0);
+        N               : in     vl_logic;
+        Z               : in     vl_logic;
         clk             : in     vl_logic;
         Read            : out    vl_logic;
         sel             : out    vl_logic;
@@ -18,6 +20,7 @@ entity LAB09 is
         UALAND          : out    vl_logic;
         UALOR           : out    vl_logic;
         UALNOT          : out    vl_logic;
-        cargaNZ         : out    vl_logic
+        cargaNZ         : out    vl_logic;
+        hlt             : out    vl_logic
     );
 end LAB09;

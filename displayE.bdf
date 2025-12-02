@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1048 176 1224 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "E" (rect 90 0 97 12)(font "Arial" ))
+	(text "EE" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

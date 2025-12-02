@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "E[0..7]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "E[0..7]" (rect 21 27 56 41)(font "Arial" (font_size 8)))
+		(text "E[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "E[7..0]" (rect 21 27 56 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 32)
 		(output)
-		(text "S[0..7]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[0..7]" (rect 103 27 139 41)(font "Arial" (font_size 8)))
+		(text "S[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[7..0]" (rect 103 27 139 41)(font "Arial" (font_size 8)))
 		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
