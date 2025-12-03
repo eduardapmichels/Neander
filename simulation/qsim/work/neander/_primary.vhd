@@ -18,6 +18,7 @@ entity neander is
         rdm             : out    vl_logic_vector(7 downto 0);
         \rem\           : out    vl_logic_vector(7 downto 0);
         ri              : out    vl_logic_vector(7 downto 0);
+        ri19            : out    vl_logic_vector(15 downto 0);
         rom             : out    vl_logic_vector(7 downto 0);
         rundebug        : in     vl_logic;
         step            : in     vl_logic

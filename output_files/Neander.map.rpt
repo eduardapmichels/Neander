@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Neander
-Tue Dec 02 21:37:43 2025
+Tue Dec 02 23:44:41 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -14,8 +14,9 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 02 21:37:43 2025      ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 02 23:44:41 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
-; Top-level Entity Name              ; PC                                         ;
+; Top-level Entity Name              ; neander                                    ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 15                                         ;
-;     Total combinational functions  ; 15                                         ;
-;     Dedicated logic registers      ; 8                                          ;
-; Total registers                    ; 8                                          ;
-; Total pins                         ; 20                                         ;
+; Total logic elements               ; 150                                        ;
+;     Total combinational functions  ; 141                                        ;
+;     Dedicated logic registers      ; 45                                         ;
+; Total registers                    ; 45                                         ;
+; Total pins                         ; 70                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; PC                 ; Neander            ;
+; Top-level entity name                                                      ; neander            ; Neander            ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,61 +157,156 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path           ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
-; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX2b1b.bdf ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/PC.bdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; ROM_Neander.vhd                  ; yes             ; User VHDL File                     ; C:/Users/eduar/git/Neander/ROM_Neander.vhd     ;         ;
+; UALY.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALY.bdf            ;         ;
+; UALOR.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALOR.bdf           ;         ;
+; UALNOT.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALNOT.bdf          ;         ;
+; UALAND.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALAND.bdf          ;         ;
+; UALADD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALADD.bdf          ;         ;
+; Write.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Write.bdf           ;         ;
+; UC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UC.bdf              ;         ;
+; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/sel.bdf             ;         ;
+; Read.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Read.bdf            ;         ;
+; IncrementaPC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/IncrementaPC.bdf    ;         ;
+; gotot0.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/gotot0.bdf          ;         ;
+; cargaRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRI.bdf         ;         ;
+; CargaREM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaREM.bdf        ;         ;
+; cargaRDM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRDM.bdf        ;         ;
+; CargaPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaPC.bdf         ;         ;
+; CargaAC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaAC.bdf         ;         ;
+; zero.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/zero.bdf            ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/ULA.bdf             ;         ;
+; RCA8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/RCA8b.bdf           ;         ;
+; OR8b.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/OR8b.bdf            ;         ;
+; NOT8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NOT8b.bdf           ;         ;
+; NEG.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NEG.bdf             ;         ;
+; Neander.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Neander.bdf         ;         ;
+; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX2b1b.bdf         ;         ;
+; MUX16b8b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX16b8b.bdf        ;         ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/FullAdder.bdf       ;         ;
+; DECOD4b16b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD4b16b.bdf      ;         ;
+; CODULA8b3b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CODULA8b3b.bdf      ;         ;
+; AND8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/AND8b.bdf           ;         ;
+; CONT3b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CONT3b.bdf          ;         ;
+; TEMPORIZADOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/TEMPORIZADOR.bdf    ;         ;
+; DECOD3b8b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD3b8b.bdf       ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/PC.bdf              ;         ;
+; register1b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register1b.bdf      ;         ;
+; UnidadeControle.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UnidadeControle.bdf ;         ;
+; register8b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register8b.bdf      ;         ;
+; MUX3b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX3b1b.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 15                 ;
-;                                             ;                    ;
-; Total combinational functions               ; 15                 ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 10                 ;
-;     -- 3 input functions                    ; 5                  ;
-;     -- <=2 input functions                  ; 0                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 15                 ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 8                  ;
-;     -- Dedicated logic registers            ; 8                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 20                 ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; incrementaPC~input ;
-; Maximum fan-out                             ; 12                 ;
-; Total fan-out                               ; 107                ;
-; Average fan-out                             ; 1.70               ;
-+---------------------------------------------+--------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 150       ;
+;                                             ;           ;
+; Total combinational functions               ; 141       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 94        ;
+;     -- 3 input functions                    ; 33        ;
+;     -- <=2 input functions                  ; 14        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 141       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 45        ;
+;     -- Dedicated logic registers            ; 45        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 70        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 45        ;
+; Total fan-out                               ; 811       ;
+; Average fan-out                             ; 2.49      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |PC                        ; 15 (3)            ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |PC                 ;              ;
-;    |MUX2b1b:inst1|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst1   ; work         ;
-;    |MUX2b1b:inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst2   ; work         ;
-;    |MUX2b1b:inst3|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst3   ; work         ;
-;    |MUX2b1b:inst4|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst4   ; work         ;
-;    |MUX2b1b:inst5|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst5   ; work         ;
-;    |MUX2b1b:inst6|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst6   ; work         ;
-;    |MUX2b1b:inst7|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst7   ; work         ;
-;    |MUX2b1b:inst9|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PC|MUX2b1b:inst9   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
+; |neander                       ; 141 (0)           ; 45 (0)       ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |neander                                                                   ; work         ;
+;    |CODULA8b3b:inst|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|CODULA8b3b:inst                                                   ; work         ;
+;    |DECOD4b16b:instdec|        ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DECOD4b16b:instdec                                                ; work         ;
+;    |PC:inst10|                 ; 16 (8)            ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10                                                         ; work         ;
+;       |MUX3b1b:inst13|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst13                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst13|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst14|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst14                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst14|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst15|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst15                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst15|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst16|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst16                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst16|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst17|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst17                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst17|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst18|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst18                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst18|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst19|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst19                                          ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst19|MUX2b1b:inst1                            ; work         ;
+;       |MUX3b1b:inst|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst                                            ; work         ;
+;          |MUX2b1b:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst|MUX2b1b:inst1                              ; work         ;
+;    |ROM:inst13|                ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ROM:inst13                                                        ; work         ;
+;    |ULA:inst7|                 ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7                                                         ; work         ;
+;       |AND8b:inst13|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|AND8b:inst13                                            ; work         ;
+;       |MUX16b8b:inst14|        ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14                                         ; work         ;
+;          |MUX2b1b:inst1|       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst1                           ; work         ;
+;          |MUX2b1b:inst4|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst4                           ; work         ;
+;          |MUX2b1b:inst5|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst5                           ; work         ;
+;          |MUX2b1b:inst6|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst6                           ; work         ;
+;          |MUX2b1b:inst7|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst7                           ; work         ;
+;          |MUX2b1b:inst8|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst8                           ; work         ;
+;          |MUX2b1b:inst9|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst9                           ; work         ;
+;          |MUX2b1b:inst|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst                            ; work         ;
+;       |RCA8b:inst3|            ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3                                             ; work         ;
+;          |FullAdder:inst1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst1                             ; work         ;
+;          |FullAdder:inst3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst3                             ; work         ;
+;          |FullAdder:inst4|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst4                             ; work         ;
+;          |FullAdder:inst6|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst6                             ; work         ;
+;          |FullAdder:inst7|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst7                             ; work         ;
+;       |zero:inst8|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|zero:inst8                                              ; work         ;
+;    |UnidadeControle:inst1|     ; 28 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1                                             ; work         ;
+;       |TEMPORIZADOR:inst|      ; 6 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst                           ; work         ;
+;          |CONT3b:inst|         ; 3 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst               ; work         ;
+;             |MUX2b1b:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst1 ; work         ;
+;             |MUX2b1b:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst2 ; work         ;
+;          |DECOD3b8b:inst3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3           ; work         ;
+;       |UC:inst2|               ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2                                    ; work         ;
+;          |CargaAC:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaAC:inst8                      ; work         ;
+;          |CargaPC:inst9|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaPC:inst9                      ; work         ;
+;          |CargaREM:inst10|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaREM:inst10                    ; work         ;
+;          |IncrementaPC:inst11| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|IncrementaPC:inst11                ; work         ;
+;          |Read:inst12|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|Read:inst12                        ; work         ;
+;          |UALNOT:inst27|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|UALNOT:inst27                      ; work         ;
+;          |gotot0:inst13|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|gotot0:inst13                      ; work         ;
+;          |sel:inst14|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|sel:inst14                         ; work         ;
+;    |register1b:inst5|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst5                                                  ; work         ;
+;    |register1b:inst6|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst6                                                  ; work         ;
+;    |register8b:inst3|          ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3                                                  ; work         ;
+;       |MUX2b1b:instmux1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux1                                 ; work         ;
+;       |MUX2b1b:instmux2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux2                                 ; work         ;
+;       |MUX2b1b:instmux3|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux3                                 ; work         ;
+;       |MUX2b1b:instmux4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux4                                 ; work         ;
+;       |MUX2b1b:instmux5|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux5                                 ; work         ;
+;       |MUX2b1b:instmux6|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux6                                 ; work         ;
+;       |MUX2b1b:instmux7|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux7                                 ; work         ;
+;       |MUX2b1b:instmux8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux8                                 ; work         ;
+;    |register8b:inst4|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst4                                                  ; work         ;
+;    |register8b:inst8|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst8                                                  ; work         ;
+;    |register8b:inst9|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst9                                                  ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -219,14 +315,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 45    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 43    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |neander|register8b:inst3|inst5                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |neander|PC:inst10|inst49                             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst|inst3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
 +-------------------------------+
@@ -234,7 +341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -244,7 +351,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 02 21:37:41 2025
+    Info: Processing started: Tue Dec 02 23:44:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Neander -c Neander
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file neandersecondhalf.bdf
@@ -358,19 +465,74 @@ Info (12021): Found 1 design units, including 1 entities, in source file unidade
     Info (12023): Found entity 1: UnidadeControle
 Info (12021): Found 1 design units, including 1 entities, in source file register8b.bdf
     Info (12023): Found entity 1: register8b
-Info (12127): Elaborating entity "PC" for the top level hierarchy
-Info (12128): Elaborating entity "MUX2b1b" for hierarchy "MUX2b1b:inst1"
+Info (12021): Found 1 design units, including 1 entities, in source file mux3b1b.bdf
+    Info (12023): Found entity 1: MUX3b1b
+Info (12127): Elaborating entity "neander" for the top level hierarchy
+Warning (275009): Pin "rundebug" not connected
+Warning (275009): Pin "step" not connected
+Info (12128): Elaborating entity "register1b" for hierarchy "register1b:inst5"
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst7"
+Info (12128): Elaborating entity "zero" for hierarchy "ULA:inst7|zero:inst8"
+Info (12128): Elaborating entity "MUX16b8b" for hierarchy "ULA:inst7|MUX16b8b:inst14"
+Info (12128): Elaborating entity "MUX2b1b" for hierarchy "ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst"
+Info (12128): Elaborating entity "RCA8b" for hierarchy "ULA:inst7|RCA8b:inst3"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ULA:inst7|RCA8b:inst3|FullAdder:inst"
+Info (12128): Elaborating entity "OR8b" for hierarchy "ULA:inst7|OR8b:inst7"
+Info (12128): Elaborating entity "AND8b" for hierarchy "ULA:inst7|AND8b:inst13"
+Info (12128): Elaborating entity "NOT8b" for hierarchy "ULA:inst7|NOT8b:inst10"
+Info (12128): Elaborating entity "NEG" for hierarchy "ULA:inst7|NEG:inst9"
+Info (12128): Elaborating entity "CODULA8b3b" for hierarchy "CODULA8b3b:inst"
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:inst1"
+Info (12128): Elaborating entity "UC" for hierarchy "UnidadeControle:inst1|UC:inst2"
+Info (12128): Elaborating entity "cargaRI" for hierarchy "UnidadeControle:inst1|UC:inst2|cargaRI:inst6"
+Info (12128): Elaborating entity "cargaRDM" for hierarchy "UnidadeControle:inst1|UC:inst2|cargaRDM:inst5"
+Info (12128): Elaborating entity "Write" for hierarchy "UnidadeControle:inst1|UC:inst2|Write:inst4"
+Info (12128): Elaborating entity "Read" for hierarchy "UnidadeControle:inst1|UC:inst2|Read:inst12"
+Info (12128): Elaborating entity "sel" for hierarchy "UnidadeControle:inst1|UC:inst2|sel:inst14"
+Info (12128): Elaborating entity "IncrementaPC" for hierarchy "UnidadeControle:inst1|UC:inst2|IncrementaPC:inst11"
+Info (12128): Elaborating entity "CargaPC" for hierarchy "UnidadeControle:inst1|UC:inst2|CargaPC:inst9"
+Info (12128): Elaborating entity "CargaAC" for hierarchy "UnidadeControle:inst1|UC:inst2|CargaAC:inst8"
+Info (12128): Elaborating entity "CargaREM" for hierarchy "UnidadeControle:inst1|UC:inst2|CargaREM:inst10"
+Info (12128): Elaborating entity "gotot0" for hierarchy "UnidadeControle:inst1|UC:inst2|gotot0:inst13"
+Info (12128): Elaborating entity "UALY" for hierarchy "UnidadeControle:inst1|UC:inst2|UALY:inst"
+Info (12128): Elaborating entity "UALADD" for hierarchy "UnidadeControle:inst1|UC:inst2|UALADD:inst26"
+Info (12128): Elaborating entity "UALAND" for hierarchy "UnidadeControle:inst1|UC:inst2|UALAND:inst23"
+Info (12128): Elaborating entity "UALOR" for hierarchy "UnidadeControle:inst1|UC:inst2|UALOR:inst25"
+Info (12128): Elaborating entity "UALNOT" for hierarchy "UnidadeControle:inst1|UC:inst2|UALNOT:inst27"
+Info (12128): Elaborating entity "TEMPORIZADOR" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst"
+Warning (275080): Converted elements in bus name "T" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "T[0]" to "T0"
+    Warning (275081): Converted element name(s) from "T[1]" to "T1"
+    Warning (275081): Converted element name(s) from "T[2]" to "T2"
+    Warning (275081): Converted element name(s) from "T[3]" to "T3"
+    Warning (275081): Converted element name(s) from "T[4]" to "T4"
+    Warning (275081): Converted element name(s) from "T[5]" to "T5"
+    Warning (275081): Converted element name(s) from "T[6]" to "T6"
+    Warning (275081): Converted element name(s) from "T[7]" to "T7"
+    Warning (275081): Converted element name(s) from "T[7..0]" to "T7..0"
+Info (12128): Elaborating entity "DECOD3b8b" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3"
+Info (12128): Elaborating entity "CONT3b" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst"
+Info (12128): Elaborating entity "DECOD4b16b" for hierarchy "DECOD4b16b:instdec"
+Info (12128): Elaborating entity "register8b" for hierarchy "register8b:inst8"
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:inst13"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst10"
+Info (12128): Elaborating entity "MUX3b1b" for hierarchy "PC:inst10|MUX3b1b:inst"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer UnidadeControle:inst1|UC:inst2|Read:inst12|inst2~0
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4666 megabytes
-    Info: Processing ended: Tue Dec 02 21:37:43 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rundebug"
+    Warning (15610): No output dependent on input pin "step"
+Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 66 output pins
+    Info (21061): Implemented 166 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4668 megabytes
+    Info: Processing ended: Tue Dec 02 23:44:41 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

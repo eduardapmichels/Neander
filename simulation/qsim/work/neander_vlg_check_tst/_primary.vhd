@@ -14,6 +14,7 @@ entity neander_vlg_check_tst is
         rdm             : in     vl_logic_vector(7 downto 0);
         \rem\           : in     vl_logic_vector(7 downto 0);
         ri              : in     vl_logic_vector(7 downto 0);
+        ri19            : in     vl_logic_vector(15 downto 0);
         rom             : in     vl_logic_vector(7 downto 0);
         seletor         : in     vl_logic;
         z               : in     vl_logic;

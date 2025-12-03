@@ -4,8 +4,9 @@ entity PC is
     port(
         PC              : out    vl_logic_vector(7 downto 0);
         reset           : in     vl_logic;
-        clk             : in     vl_logic;
+        clock           : in     vl_logic;
         Carga           : in     vl_logic_vector(7 downto 0);
-        Sel             : in     vl_logic
+        cargaPC         : in     vl_logic;
+        incrementaPC    : in     vl_logic
     );
 end PC;

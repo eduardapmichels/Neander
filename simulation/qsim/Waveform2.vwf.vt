@@ -18,30 +18,30 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/02/2025 12:15:37"
+// Generated on "12/02/2025 22:49:05"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    LAB09
+// Verilog Self-Checking Test Bench (with test vectors) for design :    UnidadeControle
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module LAB09_vlg_sample_tst(
+module UnidadeControle_vlg_sample_tst(
 	clk,
 	N,
-	opcode,
+	op,
 	Z,
 	sampler_tx
 );
 input  clk;
 input  N;
-input [3:0] opcode;
+input [15:0] op;
 input  Z;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk or N or opcode or Z)
+always @(clk or N or op or Z)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -60,7 +60,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module LAB09_vlg_check_tst (
+module UnidadeControle_vlg_check_tst (
 	cargaAC,
 	cargaNZ,
 	cargaPC,
@@ -587,12 +587,12 @@ $finish;
 end 
 endmodule
 
-module LAB09_vlg_vec_tst();
+module UnidadeControle_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
 reg N;
-reg [3:0] opcode;
+reg [15:0] op;
 reg Z;
 // wires                                               
 wire cargaAC;
@@ -616,7 +616,7 @@ wire Write;
 wire sampler;                             
 
 // assign statements (if any)                          
-LAB09 i1 (
+UnidadeControle i1 (
 // port map - connection between master ports and signals/registers   
 	.cargaAC(cargaAC),
 	.cargaNZ(cargaNZ),
@@ -629,7 +629,7 @@ LAB09 i1 (
 	.hlt(hlt),
 	.incrementaPC(incrementaPC),
 	.N(N),
-	.opcode(opcode),
+	.op(op),
 	.Read(Read),
 	.sel(sel),
 	.UALADD(UALADD),
@@ -640,48 +640,19 @@ LAB09 i1 (
 	.Write(Write),
 	.Z(Z)
 );
-// opcode[ 3 ]
+
+// clk
 initial
 begin
-	opcode[3] = 1'b0;
-	opcode[3] = #440000 1'b1;
-	opcode[3] = #260000 1'b0;
-	opcode[3] = #40000 1'b1;
-	opcode[3] = #40000 1'b0;
-end 
-// opcode[ 2 ]
-initial
-begin
-	opcode[2] = 1'b0;
-	opcode[2] = #240000 1'b1;
-	opcode[2] = #200000 1'b0;
-	opcode[2] = #300000 1'b1;
-end 
-// opcode[ 1 ]
-initial
-begin
-	opcode[1] = 1'b0;
-	opcode[1] = #80000 1'b1;
-	opcode[1] = #160000 1'b0;
-	opcode[1] = #160000 1'b1;
-	opcode[1] = #40000 1'b0;
-	opcode[1] = #160000 1'b1;
-	opcode[1] = #100000 1'b0;
-	opcode[1] = #40000 1'b1;
-end 
-// opcode[ 0 ]
-initial
-begin
-	opcode[0] = 1'b1;
-	opcode[0] = #80000 1'b0;
-	opcode[0] = #80000 1'b1;
-	opcode[0] = #80000 1'b0;
-	opcode[0] = #80000 1'b1;
-	opcode[0] = #80000 1'b0;
-	opcode[0] = #100000 1'b1;
-	opcode[0] = #100000 1'b0;
-	opcode[0] = #140000 1'b1;
-	opcode[0] = #40000 1'b0;
+	clk = 1'b1;
+	# 5000;
+	repeat(99)
+	begin
+		clk = 1'b0;
+		clk = #5000 1'b1;
+		# 5000;
+	end
+	clk = 1'b0;
 end 
 
 // N
@@ -700,29 +671,15 @@ begin
 	Z = #60000 1'b0;
 end 
 
-// clk
-initial
-begin
-	clk = 1'b1;
-	# 5000;
-	repeat(99)
-	begin
-		clk = 1'b0;
-		clk = #5000 1'b1;
-		# 5000;
-	end
-	clk = 1'b0;
-end 
-
-LAB09_vlg_sample_tst tb_sample (
+UnidadeControle_vlg_sample_tst tb_sample (
 	.clk(clk),
 	.N(N),
-	.opcode(opcode),
+	.op(op),
 	.Z(Z),
 	.sampler_tx(sampler)
 );
 
-LAB09_vlg_check_tst tb_out(
+UnidadeControle_vlg_check_tst tb_out(
 	.cargaAC(cargaAC),
 	.cargaNZ(cargaNZ),
 	.cargaPC(cargaPC),
