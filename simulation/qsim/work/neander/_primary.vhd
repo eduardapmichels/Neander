@@ -14,6 +14,7 @@ entity neander is
         crem            : out    vl_logic;
         cri             : out    vl_logic;
         goto0           : out    vl_logic;
+        acumulador      : out    vl_logic_vector(7 downto 0);
         ppcc            : out    vl_logic_vector(7 downto 0);
         rdm             : out    vl_logic_vector(7 downto 0);
         \rem\           : out    vl_logic_vector(7 downto 0);

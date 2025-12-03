@@ -2,6 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity neander_vlg_check_tst is
     port(
+        acumulador      : in     vl_logic_vector(7 downto 0);
         cpc             : in     vl_logic;
         crem            : in     vl_logic;
         cri             : in     vl_logic;
