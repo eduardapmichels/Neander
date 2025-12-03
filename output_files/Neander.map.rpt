@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Neander
-Wed Dec 03 11:38:25 2025
+Wed Dec 03 14:01:22 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -48,15 +48,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 03 11:38:25 2025      ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 03 14:01:22 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
 ; Top-level Entity Name              ; neander                                    ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 169                                        ;
-;     Total combinational functions  ; 164                                        ;
-;     Dedicated logic registers      ; 66                                         ;
-; Total registers                    ; 66                                         ;
+; Total logic elements               ; 196                                        ;
+;     Total combinational functions  ; 175                                        ;
+;     Dedicated logic registers      ; 82                                         ;
+; Total registers                    ; 82                                         ;
 ; Total pins                         ; 35                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 2,048                                      ;
@@ -158,7 +158,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -168,54 +168,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; ROM_Neander.vhd                  ; yes             ; User VHDL File                     ; C:/Users/eduar/git/Neander/ROM_Neander.vhd                           ;         ;
-; UALY.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALY.bdf                                  ;         ;
-; UALOR.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALOR.bdf                                 ;         ;
-; UALNOT.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALNOT.bdf                                ;         ;
-; UALAND.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALAND.bdf                                ;         ;
-; UALADD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALADD.bdf                                ;         ;
-; Write.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Write.bdf                                 ;         ;
-; UC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UC.bdf                                    ;         ;
-; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/sel.bdf                                   ;         ;
-; Read.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Read.bdf                                  ;         ;
-; IncrementaPC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/IncrementaPC.bdf                          ;         ;
-; gotot0.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/gotot0.bdf                                ;         ;
-; cargaRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRI.bdf                               ;         ;
-; CargaREM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaREM.bdf                              ;         ;
-; cargaRDM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRDM.bdf                              ;         ;
-; CargaPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaPC.bdf                               ;         ;
-; CargaAC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaAC.bdf                               ;         ;
-; zero.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/zero.bdf                                  ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/ULA.bdf                                   ;         ;
-; runstep.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/runstep.bdf                               ;         ;
-; RCA8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/RCA8b.bdf                                 ;         ;
-; OR8b.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/OR8b.bdf                                  ;         ;
-; NOT8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NOT8b.bdf                                 ;         ;
-; NEG.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NEG.bdf                                   ;         ;
-; Neander.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Neander.bdf                               ;         ;
-; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX2b1b.bdf                               ;         ;
-; MUX16b8b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX16b8b.bdf                              ;         ;
-; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/FullAdder.bdf                             ;         ;
-; DivClock.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DivClock.bdf                              ;         ;
-; displayG.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayG.bdf                              ;         ;
-; displayF.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayF.bdf                              ;         ;
-; displayE.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayE.bdf                              ;         ;
-; displayD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayD.bdf                              ;         ;
-; displayC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayC.bdf                              ;         ;
-; displayB.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayB.bdf                              ;         ;
-; displayA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayA.bdf                              ;         ;
-; DECOD4b16b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD4b16b.bdf                            ;         ;
-; CODULA8b3b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CODULA8b3b.bdf                            ;         ;
-; BCDConverter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/BCDConverter.bdf                          ;         ;
-; AND8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/AND8b.bdf                                 ;         ;
-; CONT3b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CONT3b.bdf                                ;         ;
-; TEMPORIZADOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/TEMPORIZADOR.bdf                          ;         ;
-; DECOD3b8b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD3b8b.bdf                             ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/PC.bdf                                    ;         ;
-; register1b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register1b.bdf                            ;         ;
-; UnidadeControle.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UnidadeControle.bdf                       ;         ;
-; register8b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register8b.bdf                            ;         ;
-; MUX3b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX3b1b.bdf                               ;         ;
+; ROM_Neander.vhd                  ; yes             ; User VHDL File                     ; C:/Users/aluno/Downloads/trabalho/ROM_Neander.vhd                    ;         ;
+; UALY.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALY.bdf                           ;         ;
+; UALOR.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALOR.bdf                          ;         ;
+; UALNOT.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALNOT.bdf                         ;         ;
+; UALAND.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALAND.bdf                         ;         ;
+; UALADD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALADD.bdf                         ;         ;
+; Write.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Write.bdf                          ;         ;
+; UC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UC.bdf                             ;         ;
+; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/sel.bdf                            ;         ;
+; Read.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Read.bdf                           ;         ;
+; IncrementaPC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/IncrementaPC.bdf                   ;         ;
+; gotot0.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/gotot0.bdf                         ;         ;
+; cargaRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/cargaRI.bdf                        ;         ;
+; CargaREM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaREM.bdf                       ;         ;
+; cargaRDM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/cargaRDM.bdf                       ;         ;
+; CargaPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaPC.bdf                        ;         ;
+; CargaAC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaAC.bdf                        ;         ;
+; zero.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/zero.bdf                           ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/ULA.bdf                            ;         ;
+; runstep.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/runstep.bdf                        ;         ;
+; RCA8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/RCA8b.bdf                          ;         ;
+; OR8b.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/OR8b.bdf                           ;         ;
+; NOT8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/NOT8b.bdf                          ;         ;
+; NEG.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/NEG.bdf                            ;         ;
+; Neander.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Neander.bdf                        ;         ;
+; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX2b1b.bdf                        ;         ;
+; MUX16b8b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX16b8b.bdf                       ;         ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/FullAdder.bdf                      ;         ;
+; DivClock.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DivClock.bdf                       ;         ;
+; displayG.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayG.bdf                       ;         ;
+; displayF.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayF.bdf                       ;         ;
+; displayE.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayE.bdf                       ;         ;
+; displayD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayD.bdf                       ;         ;
+; displayC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayC.bdf                       ;         ;
+; displayB.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayB.bdf                       ;         ;
+; displayA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayA.bdf                       ;         ;
+; DECOD4b16b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DECOD4b16b.bdf                     ;         ;
+; CODULA8b3b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CODULA8b3b.bdf                     ;         ;
+; BCDConverter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/BCDConverter.bdf                   ;         ;
+; AND8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/AND8b.bdf                          ;         ;
+; CONT3b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CONT3b.bdf                         ;         ;
+; TEMPORIZADOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/TEMPORIZADOR.bdf                   ;         ;
+; DECOD3b8b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DECOD3b8b.bdf                      ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/PC.bdf                             ;         ;
+; register1b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/register1b.bdf                     ;         ;
+; UnidadeControle.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UnidadeControle.bdf                ;         ;
+; register8b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/register8b.bdf                     ;         ;
+; MUX3b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX3b1b.bdf                        ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -225,7 +225,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_8hv.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/eduar/git/Neander/db/altsyncram_8hv.tdf                     ;         ;
+; db/altsyncram_8hv.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Downloads/trabalho/db/altsyncram_8hv.tdf              ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -234,29 +234,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 169         ;
+; Estimated Total logic elements              ; 196         ;
 ;                                             ;             ;
-; Total combinational functions               ; 164         ;
+; Total combinational functions               ; 175         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 106         ;
-;     -- 3 input functions                    ; 25          ;
-;     -- <=2 input functions                  ; 33          ;
+;     -- 4 input functions                    ; 99          ;
+;     -- 3 input functions                    ; 46          ;
+;     -- <=2 input functions                  ; 30          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 164         ;
+;     -- normal mode                          ; 175         ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
-; Total registers                             ; 66          ;
-;     -- Dedicated logic registers            ; 66          ;
+; Total registers                             ; 82          ;
+;     -- Dedicated logic registers            ; 82          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 35          ;
 ; Total memory bits                           ; 2048        ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 54          ;
-; Total fan-out                               ; 893         ;
-; Average fan-out                             ; 2.90        ;
+; Maximum fan-out                             ; 70          ;
+; Total fan-out                               ; 988         ;
+; Average fan-out                             ; 2.95        ;
 +---------------------------------------------+-------------+
 
 
@@ -265,7 +265,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
-; |neander                                 ; 164 (0)           ; 66 (0)       ; 2048        ; 0            ; 0       ; 0         ; 35   ; 0            ; |neander                                                                   ; work         ;
+; |neander                                 ; 175 (1)           ; 82 (0)       ; 2048        ; 0            ; 0       ; 0         ; 35   ; 0            ; |neander                                                                   ; work         ;
 ;    |BCDConverter:inst12|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12                                               ; work         ;
 ;       |displayA:inst4|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayA:inst4                                ; work         ;
 ;       |displayB:inst1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayB:inst1                                ; work         ;
@@ -274,8 +274,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |displayE:inst6|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayE:inst6                                ; work         ;
 ;       |displayF:inst8|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayF:inst8                                ; work         ;
 ;       |displayG:inst0|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayG:inst0                                ; work         ;
-;    |BCDConverter:inst14|                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14                                               ; work         ;
-;       |displayA:inst4|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14|displayA:inst4                                ; work         ;
+;    |BCDConverter:inst14|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14                                               ; work         ;
+;       |displayA:inst4|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14|displayA:inst4                                ; work         ;
 ;       |displayB:inst1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14|displayB:inst1                                ; work         ;
 ;       |displayC:inst2|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14|displayC:inst2                                ; work         ;
 ;       |displayD:inst3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst14|displayD:inst3                                ; work         ;
@@ -299,8 +299,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |displayF:inst8|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst2|displayF:inst8                                 ; work         ;
 ;       |displayG:inst0|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst2|displayG:inst0                                 ; work         ;
 ;    |CODULA8b3b:inst|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|CODULA8b3b:inst                                                   ; work         ;
-;    |DECOD4b16b:instdec|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DECOD4b16b:instdec                                                ; work         ;
-;    |DivClock:inst16|                     ; 25 (25)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DivClock:inst16                                                   ; work         ;
+;    |DECOD4b16b:instdec|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DECOD4b16b:instdec                                                ; work         ;
+;    |DivClock:divisor|                    ; 24 (24)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DivClock:divisor                                                  ; work         ;
+;    |MUX16b8b:inst21|                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21                                                   ; work         ;
+;       |MUX2b1b:inst1|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst1                                     ; work         ;
+;       |MUX2b1b:inst4|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst4                                     ; work         ;
+;       |MUX2b1b:inst5|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst5                                     ; work         ;
+;       |MUX2b1b:inst6|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst6                                     ; work         ;
+;       |MUX2b1b:inst7|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst7                                     ; work         ;
+;       |MUX2b1b:inst8|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst8                                     ; work         ;
+;       |MUX2b1b:inst9|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst9                                     ; work         ;
+;       |MUX2b1b:inst|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21|MUX2b1b:inst                                      ; work         ;
+;    |MUX16b8b:inst22|                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22                                                   ; work         ;
+;       |MUX2b1b:inst1|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst1                                     ; work         ;
+;       |MUX2b1b:inst4|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst4                                     ; work         ;
+;       |MUX2b1b:inst5|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst5                                     ; work         ;
+;       |MUX2b1b:inst6|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst6                                     ; work         ;
+;       |MUX2b1b:inst7|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst7                                     ; work         ;
+;       |MUX2b1b:inst8|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst8                                     ; work         ;
+;       |MUX2b1b:inst9|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst9                                     ; work         ;
+;       |MUX2b1b:inst|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst22|MUX2b1b:inst                                      ; work         ;
 ;    |PC:inst10|                           ; 16 (8)            ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10                                                         ; work         ;
 ;       |MUX3b1b:inst13|                   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst13                                          ; work         ;
 ;          |MUX2b1b:inst1|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|PC:inst10|MUX3b1b:inst13|MUX2b1b:inst1                            ; work         ;
@@ -323,35 +341,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |altsyncram_8hv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ROM:inst13|altsyncram:Mux7_rtl_0|altsyncram_8hv:auto_generated    ; work         ;
 ;    |ULA:inst7|                           ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7                                                         ; work         ;
 ;       |AND8b:inst13|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|AND8b:inst13                                            ; work         ;
-;       |MUX16b8b:inst14|                  ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14                                         ; work         ;
+;       |MUX16b8b:inst14|                  ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14                                         ; work         ;
 ;          |MUX2b1b:inst1|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst1                           ; work         ;
-;          |MUX2b1b:inst4|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst4                           ; work         ;
-;          |MUX2b1b:inst5|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst5                           ; work         ;
+;          |MUX2b1b:inst4|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst4                           ; work         ;
+;          |MUX2b1b:inst5|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst5                           ; work         ;
 ;          |MUX2b1b:inst6|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst6                           ; work         ;
-;          |MUX2b1b:inst7|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst7                           ; work         ;
+;          |MUX2b1b:inst7|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst7                           ; work         ;
 ;          |MUX2b1b:inst8|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst8                           ; work         ;
 ;          |MUX2b1b:inst9|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst9                           ; work         ;
 ;          |MUX2b1b:inst|                  ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst                            ; work         ;
 ;       |RCA8b:inst3|                      ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3                                             ; work         ;
 ;          |FullAdder:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst1                             ; work         ;
 ;          |FullAdder:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst2                             ; work         ;
-;          |FullAdder:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst4                             ; work         ;
+;          |FullAdder:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst3                             ; work         ;
+;          |FullAdder:inst4|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst4                             ; work         ;
 ;          |FullAdder:inst6|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst6                             ; work         ;
-;          |FullAdder:inst7|               ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst7                             ; work         ;
-;       |zero:inst8|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|zero:inst8                                              ; work         ;
-;    |UnidadeControle:inst1|               ; 23 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1                                             ; work         ;
+;          |FullAdder:inst7|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst7                             ; work         ;
+;       |zero:inst8|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|zero:inst8                                              ; work         ;
+;    |UnidadeControle:inst1|               ; 22 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1                                             ; work         ;
 ;       |TEMPORIZADOR:inst|                ; 6 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst                           ; work         ;
 ;          |CONT3b:inst|                   ; 3 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst               ; work         ;
 ;             |MUX2b1b:inst1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst1 ; work         ;
 ;             |MUX2b1b:inst2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst2 ; work         ;
 ;          |DECOD3b8b:inst3|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3           ; work         ;
-;       |UC:inst2|                         ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2                                    ; work         ;
+;       |UC:inst2|                         ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2                                    ; work         ;
 ;          |CargaAC:inst8|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaAC:inst8                      ; work         ;
-;          |CargaREM:inst10|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaREM:inst10                    ; work         ;
+;          |CargaREM:inst10|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaREM:inst10                    ; work         ;
 ;          |IncrementaPC:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|IncrementaPC:inst11                ; work         ;
 ;          |Read:inst12|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|Read:inst12                        ; work         ;
 ;          |gotot0:inst13|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|gotot0:inst13                      ; work         ;
 ;          |sel:inst14|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|sel:inst14                         ; work         ;
+;    |register1b:inst19|                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst19                                                 ; work         ;
+;    |register1b:inst20|                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst20                                                 ; work         ;
 ;    |register8b:inst3|                    ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3                                                  ; work         ;
 ;       |MUX2b1b:instmux1|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux1                                 ; work         ;
 ;       |MUX2b1b:instmux2|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux2                                 ; work         ;
@@ -362,10 +383,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |MUX2b1b:instmux7|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux7                                 ; work         ;
 ;       |MUX2b1b:instmux8|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux8                                 ; work         ;
 ;    |register8b:inst4|                    ; 8 (8)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst4                                                  ; work         ;
+;    |register8b:inst5|                    ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst5                                                  ; work         ;
+;    |register8b:inst6|                    ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst6                                                  ; work         ;
 ;    |register8b:inst8|                    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst8                                                  ; work         ;
-;    |register8b:inst9|                    ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst9                                                  ; work         ;
-;    |runstep:inst17|                      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|runstep:inst17                                                    ; work         ;
-;       |MUX2b1b:inst1|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|runstep:inst17|MUX2b1b:inst1                                      ; work         ;
+;    |register8b:inst9|                    ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst9                                                  ; work         ;
+;    |runstep:inst16|                      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|runstep:inst16                                                    ; work         ;
+;       |MUX2b1b:inst1|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|runstep:inst16|MUX2b1b:inst1                                      ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -384,6 +407,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------------------------------------+
 ; Register name                          ; Reason for Removal                    ;
 +----------------------------------------+---------------------------------------+
+; register8b:inst9|inst14                ; Merged with register1b:inst19|inst    ;
 ; register8b:inst4|inst                  ; Lost fanout                           ;
 ; register8b:inst4|inst3                 ; Lost fanout                           ;
 ; register8b:inst4|inst5                 ; Lost fanout                           ;
@@ -392,10 +416,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register8b:inst4|inst10                ; Lost fanout                           ;
 ; register8b:inst4|inst12                ; Lost fanout                           ;
 ; register8b:inst4|inst14                ; Lost fanout                           ;
-; register8b:inst4|inst14~0              ; Merged with register8b:inst4|inst10~0 ;
+; register8b:inst4|inst14~0              ; Merged with register8b:inst4|inst8~0  ;
+; register8b:inst4|inst8~0               ; Merged with register8b:inst4|inst10~0 ;
 ; register8b:inst4|inst10~0              ; Merged with register8b:inst4|inst12~0 ;
-; register8b:inst4|inst12~0              ; Merged with register8b:inst4|inst8~0  ;
-; register8b:inst4|inst8~0               ; Merged with register8b:inst4|inst6~0  ;
+; register8b:inst4|inst12~0              ; Merged with register8b:inst4|inst6~0  ;
 ; register8b:inst4|inst6~0               ; Merged with register8b:inst4|inst5~0  ;
 ; register8b:inst4|inst5~0               ; Merged with register8b:inst4|inst3~0  ;
 ; register8b:inst4|inst3~0               ; Merged with register8b:inst4|inst~0   ;
@@ -406,7 +430,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register8b:inst4|inst10~3              ; Merged with register8b:inst4|inst~3   ;
 ; register8b:inst4|inst12~3              ; Merged with register8b:inst4|inst~3   ;
 ; register8b:inst4|inst14~3              ; Merged with register8b:inst4|inst~3   ;
-; Total Number of Removed Registers = 22 ;                                       ;
+; Total Number of Removed Registers = 23 ;                                       ;
 +----------------------------------------+---------------------------------------+
 
 
@@ -415,12 +439,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
+; Total registers                              ; 82    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 57    ;
+; Number of registers using Asynchronous Clear ; 73    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Clock Enable       ; 45    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -557,7 +581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Dec 03 11:38:21 2025
+    Info: Processing started: Wed Dec 03 14:01:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Neander -c Neander
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file neandersecondhalf.bdf
@@ -678,16 +702,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file backupn
 Info (12127): Elaborating entity "neander" for the top level hierarchy
 Warning (275080): Converted elements in bus name "AC" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "AC[7..0]" to "AC7..0"
-    Warning (275081): Converted element name(s) from "AC[7..4]" to "AC7..4"
-    Warning (275081): Converted element name(s) from "AC[3..0]" to "AC3..0"
+    Warning (275081): Converted element name(s) from "AC[7..0]" to "AC7..0"
+    Warning (275081): Converted element name(s) from "AC[7..0]" to "AC7..0"
 Warning (275080): Converted elements in bus name "AC0" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "AC0[6..0]" to "AC06..0"
 Warning (275080): Converted elements in bus name "AC1" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "AC1[6..0]" to "AC16..0"
 Warning (275080): Converted elements in bus name "PC" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "PC[7..4]" to "PC7..4"
     Warning (275081): Converted element name(s) from "PC[7..0]" to "PC7..0"
-    Warning (275081): Converted element name(s) from "PC[3..0]" to "PC3..0"
+    Warning (275081): Converted element name(s) from "PC[7..0]" to "PC7..0"
+    Warning (275081): Converted element name(s) from "PC[7..0]" to "PC7..0"
 Warning (275080): Converted elements in bus name "PC0" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "PC0[6..0]" to "PC06..0"
 Warning (275080): Converted elements in bus name "PC1" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -723,9 +747,7 @@ Warning (275080): Converted elements in bus name "T" using legacy naming rules. 
 Info (12128): Elaborating entity "DECOD3b8b" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3"
 Info (12128): Elaborating entity "CONT3b" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst"
 Info (12128): Elaborating entity "MUX2b1b" for hierarchy "UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst"
-Info (12128): Elaborating entity "register1b" for hierarchy "register1b:inst5"
-Warning (275009): Pin "clk" not connected
-Warning (275009): Pin "cargaNZ" not connected
+Info (12128): Elaborating entity "register1b" for hierarchy "register1b:inst20"
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst7"
 Info (12128): Elaborating entity "zero" for hierarchy "ULA:inst7|zero:inst8"
 Info (12128): Elaborating entity "MUX16b8b" for hierarchy "ULA:inst7|MUX16b8b:inst14"
@@ -737,22 +759,22 @@ Info (12128): Elaborating entity "NOT8b" for hierarchy "ULA:inst7|NOT8b:inst10"
 Info (12128): Elaborating entity "NEG" for hierarchy "ULA:inst7|NEG:inst9"
 Info (12128): Elaborating entity "CODULA8b3b" for hierarchy "CODULA8b3b:inst"
 Info (12128): Elaborating entity "register8b" for hierarchy "register8b:inst9"
-Info (12128): Elaborating entity "runstep" for hierarchy "runstep:inst17"
-Info (12128): Elaborating entity "DivClock" for hierarchy "DivClock:inst16"
+Info (12128): Elaborating entity "runstep" for hierarchy "runstep:inst16"
+Info (12128): Elaborating entity "DivClock" for hierarchy "DivClock:divisor"
 Info (12128): Elaborating entity "ROM" for hierarchy "ROM:inst13"
 Info (12128): Elaborating entity "PC" for hierarchy "PC:inst10"
 Info (12128): Elaborating entity "MUX3b1b" for hierarchy "PC:inst10|MUX3b1b:inst"
 Info (12128): Elaborating entity "DECOD4b16b" for hierarchy "DECOD4b16b:instdec"
-Info (12128): Elaborating entity "BCDConverter" for hierarchy "BCDConverter:inst14"
-Info (12128): Elaborating entity "displayA" for hierarchy "BCDConverter:inst14|displayA:inst4"
-Info (12128): Elaborating entity "displayB" for hierarchy "BCDConverter:inst14|displayB:inst1"
-Info (12128): Elaborating entity "displayC" for hierarchy "BCDConverter:inst14|displayC:inst2"
-Info (12128): Elaborating entity "displayD" for hierarchy "BCDConverter:inst14|displayD:inst3"
-Info (12128): Elaborating entity "displayE" for hierarchy "BCDConverter:inst14|displayE:inst6"
-Info (12128): Elaborating entity "displayF" for hierarchy "BCDConverter:inst14|displayF:inst8"
-Info (12128): Elaborating entity "displayG" for hierarchy "BCDConverter:inst14|displayG:inst0"
+Info (12128): Elaborating entity "BCDConverter" for hierarchy "BCDConverter:inst15"
+Info (12128): Elaborating entity "displayA" for hierarchy "BCDConverter:inst15|displayA:inst4"
+Info (12128): Elaborating entity "displayB" for hierarchy "BCDConverter:inst15|displayB:inst1"
+Info (12128): Elaborating entity "displayC" for hierarchy "BCDConverter:inst15|displayC:inst2"
+Info (12128): Elaborating entity "displayD" for hierarchy "BCDConverter:inst15|displayD:inst3"
+Info (12128): Elaborating entity "displayE" for hierarchy "BCDConverter:inst15|displayE:inst6"
+Info (12128): Elaborating entity "displayF" for hierarchy "BCDConverter:inst15|displayF:inst8"
+Info (12128): Elaborating entity "displayG" for hierarchy "BCDConverter:inst15|displayG:inst0"
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer runstep:inst17|MUX2b1b:inst1|inst3~0
+    Warning (19017): Found clock multiplexer runstep:inst16|MUX2b1b:inst1|inst3~0
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276031): Inferred altsyncram megafunction from the following design logic: "ROM:inst13|Mux7_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -777,15 +799,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 228 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 255 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 185 logic cells
+    Info (21061): Implemented 212 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4686 megabytes
-    Info: Processing ended: Wed Dec 03 11:38:25 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4676 megabytes
+    Info: Processing ended: Wed Dec 03 14:01:22 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

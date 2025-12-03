@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Dec 03 11:39:01 2025
+Fitter Status : Successful - Wed Dec 03 14:01:35 2025
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : Neander
 Top-level Entity Name : neander
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 191 / 15,408 ( 1 % )
-    Total combinational functions : 165 / 15,408 ( 1 % )
-    Dedicated logic registers : 66 / 15,408 ( < 1 % )
-Total registers : 66
+Total logic elements : 199 / 15,408 ( 1 % )
+    Total combinational functions : 176 / 15,408 ( 1 % )
+    Dedicated logic registers : 82 / 15,408 ( < 1 % )
+Total registers : 82
 Total pins : 35 / 347 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 2,048 / 516,096 ( < 1 % )

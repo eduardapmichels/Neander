@@ -18,11 +18,14 @@
 # Loading work.neander
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_ram_block
+# Loading cycloneiii_ver.cycloneiii_ram_register
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
 # Loading work.neander_vlg_sample_tst
 # Loading work.neander_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Waveform13.vwf.vt(1713)
+# ** Note: $finish    : Waveform14.vwf.vt(512)
 #    Time: 1 us  Iteration: 0  Instance: /neander_vlg_vec_tst/tb_out

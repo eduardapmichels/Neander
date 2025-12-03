@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -104 264 64 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Reset" (rect 5 0 35 12)(font "Arial" ))
+	(text "Reset" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1515,82 +1515,6 @@ applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 3360 -144 3424 -64)
-	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst42" (rect 3 68 32 80)(font "Arial" ))
-	(port
-		(pt 32 80)
-		(input)
-		(text "CLRN" (rect 21 59 44 71)(font "Courier New" (bold)))
-		(text "CLRN" (rect 21 58 44 70)(font "Courier New" (bold)))
-		(line (pt 32 80)(pt 32 76))
-	)
-	(port
-		(pt 0 40)
-		(input)
-		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
-		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
-		(line (pt 0 40)(pt 12 40))
-	)
-	(port
-		(pt 0 24)
-		(input)
-		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
-		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
-		(line (pt 0 24)(pt 12 24))
-	)
-	(port
-		(pt 32 0)
-		(input)
-		(text "PRN" (rect 24 13 41 25)(font "Courier New" (bold)))
-		(text "PRN" (rect 24 11 41 23)(font "Courier New" (bold)))
-		(line (pt 32 4)(pt 32 0))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
-		(line (pt 52 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 12 12)(pt 52 12))
-		(line (pt 12 68)(pt 52 68))
-		(line (pt 52 68)(pt 52 12))
-		(line (pt 12 68)(pt 12 12))
-		(line (pt 19 40)(pt 12 47))
-		(line (pt 12 32)(pt 20 40))
-		(circle (rect 28 4 36 12))
-		(circle (rect 28 68 36 76))
-	)
-)
-(symbol
-	(rect 3336 -184 3384 -152)
-	(text "NOT" (rect 27 22 47 32)(font "Arial" (font_size 6)))
-	(text "inst43" (rect 22 -1 51 11)(font "Arial" ))
-	(port
-		(pt 48 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 35 13 46 25)(font "Courier New" (bold))(invisible))
-		(line (pt 48 16)(pt 35 16))
-	)
-	(port
-		(pt 0 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect -1 13 16 25)(font "Courier New" (bold))(invisible))
-		(line (pt 9 16)(pt 0 16))
-	)
-	(drawing
-		(line (pt 35 7)(pt 35 25))
-		(line (pt 35 25)(pt 17 16))
-		(line (pt 35 7)(pt 17 16))
-		(circle (rect 9 12 17 20))
-	)
-	(rotate180)
-)
-(symbol
 	(rect 3512 -160 3576 -80)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst46" (rect 3 68 32 80)(font "Arial" ))
@@ -2730,28 +2654,8 @@ applicable agreement for further details.
 	(pt 3136 -104)
 )
 (connector
-	(pt 3336 -168)
-	(pt 3328 -168)
-)
-(connector
-	(pt 3328 -168)
-	(pt 3328 -120)
-)
-(connector
-	(pt 3360 -120)
-	(pt 3328 -120)
-)
-(connector
 	(pt 2888 -120)
 	(pt 2960 -120)
-)
-(connector
-	(pt 3384 -168)
-	(pt 3456 -168)
-)
-(connector
-	(pt 3456 -168)
-	(pt 3456 -120)
 )
 (connector
 	(pt 2584 -40)
@@ -2796,22 +2700,6 @@ applicable agreement for further details.
 (connector
 	(pt 3128 -88)
 	(pt 3168 -88)
-)
-(connector
-	(pt 3232 -104)
-	(pt 3264 -104)
-)
-(connector
-	(pt 3264 -104)
-	(pt 3360 -104)
-)
-(connector
-	(pt 3064 -232)
-	(pt 3200 -232)
-)
-(connector
-	(pt 3200 -232)
-	(pt 3392 -232)
 )
 (connector
 	(pt 2704 0)
@@ -3002,14 +2890,6 @@ applicable agreement for further details.
 	(pt 4296 -200)
 )
 (connector
-	(pt 3424 -120)
-	(pt 3456 -120)
-)
-(connector
-	(pt 3456 -120)
-	(pt 3512 -120)
-)
-(connector
 	(pt 3576 -136)
 	(pt 3608 -136)
 )
@@ -3078,38 +2958,6 @@ applicable agreement for further details.
 	(pt 4040 -48)
 )
 (connector
-	(pt 3392 -264)
-	(pt 3544 -264)
-)
-(connector
-	(pt 3544 -264)
-	(pt 3736 -264)
-)
-(connector
-	(pt 3392 -264)
-	(pt 3392 -232)
-)
-(connector
-	(pt 3392 -232)
-	(pt 3392 -144)
-)
-(connector
-	(pt 3392 -64)
-	(pt 3392 -48)
-)
-(connector
-	(pt 3392 -48)
-	(pt 3392 272)
-)
-(connector
-	(pt 3392 -48)
-	(pt 3544 -48)
-)
-(connector
-	(pt 3544 -48)
-	(pt 3736 -48)
-)
-(connector
 	(pt 4264 -200)
 	(pt 4296 -200)
 )
@@ -3132,6 +2980,54 @@ applicable agreement for further details.
 (connector
 	(pt 192 272)
 	(pt 384 272)
+)
+(connector
+	(pt 3472 -120)
+	(pt 3512 -120)
+)
+(connector
+	(pt 3472 -264)
+	(pt 3544 -264)
+)
+(connector
+	(pt 3544 -264)
+	(pt 3736 -264)
+)
+(connector
+	(pt 3544 -48)
+	(pt 3736 -48)
+)
+(connector
+	(pt 3472 -232)
+	(pt 3472 -264)
+)
+(connector
+	(pt 3064 -232)
+	(pt 3200 -232)
+)
+(connector
+	(pt 3200 -232)
+	(pt 3472 -232)
+)
+(connector
+	(pt 3472 -104)
+	(pt 3472 -120)
+)
+(connector
+	(pt 3232 -104)
+	(pt 3264 -104)
+)
+(connector
+	(pt 3264 -104)
+	(pt 3472 -104)
+)
+(connector
+	(pt 3392 -48)
+	(pt 3392 272)
+)
+(connector
+	(pt 3392 -48)
+	(pt 3544 -48)
 )
 (junction (pt 256 184))
 (junction (pt 448 168))
@@ -3190,7 +3086,6 @@ applicable agreement for further details.
 (junction (pt 3200 272))
 (junction (pt 2552 272))
 (junction (pt 2552 -152))
-(junction (pt 3456 -120))
 (junction (pt 3608 -136))
 (junction (pt 3544 -264))
 (junction (pt 3736 -264))
@@ -3203,6 +3098,4 @@ applicable agreement for further details.
 (junction (pt 4040 -312))
 (junction (pt 3904 -48))
 (junction (pt 4040 -48))
-(junction (pt 3392 -232))
-(junction (pt 3392 -48))
 (junction (pt 4296 -200))

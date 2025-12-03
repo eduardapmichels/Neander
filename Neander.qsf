@@ -49,7 +49,7 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/eduar/git/Neander/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/aluno/Downloads/trabalho/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
@@ -87,7 +87,7 @@ set_location_assignment PIN_G21 -to clock
 set_location_assignment PIN_E1 -to hlt
 set_location_assignment PIN_H2 -to reset
 set_location_assignment PIN_J6 -to rundebug
-set_location_assignment PIN_G3 -to step
+set_location_assignment PIN_F1 -to step
 set_global_assignment -name BDF_FILE NeanderSecondHalf.bdf
 set_global_assignment -name VHDL_FILE ROM_Neander.vhd
 set_global_assignment -name BDF_FILE teste_ula_cod_decod.bdf
@@ -177,6 +177,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13scac.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE znwave.vwf
 set_global_assignment -name BDF_FILE backupn.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
 set_location_assignment PIN_J1 -to is_negative
 set_location_assignment PIN_J2 -to is_zero
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

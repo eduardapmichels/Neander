@@ -5,26 +5,10 @@ entity neander is
         hlt             : out    vl_logic;
         clk             : in     vl_logic;
         reset           : in     vl_logic;
-        ler             : out    vl_logic;
-        seletor         : out    vl_logic;
-        cpc             : out    vl_logic;
-        incpc           : out    vl_logic;
-        crem            : out    vl_logic;
-        cri             : out    vl_logic;
-        goto0           : out    vl_logic;
-        Y               : out    vl_logic;
-        ADD             : out    vl_logic;
-        \NOT\           : out    vl_logic;
-        CAC             : out    vl_logic;
         is_zero         : out    vl_logic;
         is_negative     : out    vl_logic;
         acumulador      : out    vl_logic_vector(7 downto 0);
         ppcc            : out    vl_logic_vector(7 downto 0);
-        rdm             : out    vl_logic_vector(7 downto 0);
-        \rem\           : out    vl_logic_vector(7 downto 0);
-        ri              : out    vl_logic_vector(7 downto 0);
-        ri19            : out    vl_logic_vector(15 downto 0);
-        rom             : out    vl_logic_vector(7 downto 0);
         rundebug        : in     vl_logic;
         step            : in     vl_logic
     );
