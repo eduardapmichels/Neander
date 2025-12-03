@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Neander
-Wed Dec 03 15:08:53 2025
+Wed Dec 03 18:39:13 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -48,13 +48,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 03 15:08:53 2025      ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 03 18:39:13 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
 ; Top-level Entity Name              ; neander                                    ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 196                                        ;
-;     Total combinational functions  ; 175                                        ;
+; Total logic elements               ; 197                                        ;
+;     Total combinational functions  ; 176                                        ;
 ;     Dedicated logic registers      ; 82                                         ;
 ; Total registers                    ; 82                                         ;
 ; Total pins                         ; 35                                         ;
@@ -234,16 +234,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 196         ;
+; Estimated Total logic elements              ; 197         ;
 ;                                             ;             ;
-; Total combinational functions               ; 175         ;
+; Total combinational functions               ; 176         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 99          ;
+;     -- 4 input functions                    ; 98          ;
 ;     -- 3 input functions                    ; 46          ;
-;     -- <=2 input functions                  ; 30          ;
+;     -- <=2 input functions                  ; 32          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 175         ;
+;     -- normal mode                          ; 176         ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 82          ;
@@ -255,8 +255,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 70          ;
-; Total fan-out                               ; 988         ;
-; Average fan-out                             ; 2.95        ;
+; Total fan-out                               ; 987         ;
+; Average fan-out                             ; 2.94        ;
 +---------------------------------------------+-------------+
 
 
@@ -265,7 +265,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
-; |neander                                 ; 175 (1)           ; 82 (0)       ; 2048        ; 0            ; 0       ; 0         ; 35   ; 0            ; |neander                                                                   ; work         ;
+; |neander                                 ; 176 (1)           ; 82 (0)       ; 2048        ; 0            ; 0       ; 0         ; 35   ; 0            ; |neander                                                                   ; work         ;
 ;    |BCDConverter:inst12|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12                                               ; work         ;
 ;       |displayA:inst4|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayA:inst4                                ; work         ;
 ;       |displayB:inst1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst12|displayB:inst1                                ; work         ;
@@ -298,7 +298,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |displayE:inst6|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst2|displayE:inst6                                 ; work         ;
 ;       |displayF:inst8|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst2|displayF:inst8                                 ; work         ;
 ;       |displayG:inst0|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|BCDConverter:inst2|displayG:inst0                                 ; work         ;
-;    |CODULA8b3b:inst|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|CODULA8b3b:inst                                                   ; work         ;
+;    |CODULA8b3b:inst|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|CODULA8b3b:inst                                                   ; work         ;
 ;    |DECOD4b16b:instdec|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DECOD4b16b:instdec                                                ; work         ;
 ;    |DivClock:divisor|                    ; 24 (24)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|DivClock:divisor                                                  ; work         ;
 ;    |MUX16b8b:inst21|                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|MUX16b8b:inst21                                                   ; work         ;
@@ -339,40 +339,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |ROM:inst13|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ROM:inst13                                                        ; work         ;
 ;       |altsyncram:Mux7_rtl_0|            ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ROM:inst13|altsyncram:Mux7_rtl_0                                  ; work         ;
 ;          |altsyncram_8hv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ROM:inst13|altsyncram:Mux7_rtl_0|altsyncram_8hv:auto_generated    ; work         ;
-;    |ULA:inst7|                           ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7                                                         ; work         ;
+;    |ULA:inst7|                           ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7                                                         ; work         ;
 ;       |AND8b:inst13|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|AND8b:inst13                                            ; work         ;
-;       |MUX16b8b:inst14|                  ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14                                         ; work         ;
+;       |MUX16b8b:inst14|                  ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14                                         ; work         ;
 ;          |MUX2b1b:inst1|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst1                           ; work         ;
-;          |MUX2b1b:inst4|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst4                           ; work         ;
+;          |MUX2b1b:inst4|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst4                           ; work         ;
 ;          |MUX2b1b:inst5|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst5                           ; work         ;
 ;          |MUX2b1b:inst6|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst6                           ; work         ;
-;          |MUX2b1b:inst7|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst7                           ; work         ;
+;          |MUX2b1b:inst7|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst7                           ; work         ;
 ;          |MUX2b1b:inst8|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst8                           ; work         ;
 ;          |MUX2b1b:inst9|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst9                           ; work         ;
-;          |MUX2b1b:inst|                  ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst                            ; work         ;
-;       |RCA8b:inst3|                      ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3                                             ; work         ;
+;          |MUX2b1b:inst|                  ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst                            ; work         ;
+;       |RCA8b:inst3|                      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3                                             ; work         ;
 ;          |FullAdder:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst1                             ; work         ;
 ;          |FullAdder:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst2                             ; work         ;
 ;          |FullAdder:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst3                             ; work         ;
-;          |FullAdder:inst4|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst4                             ; work         ;
+;          |FullAdder:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst4                             ; work         ;
 ;          |FullAdder:inst6|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst6                             ; work         ;
 ;          |FullAdder:inst7|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|RCA8b:inst3|FullAdder:inst7                             ; work         ;
 ;       |zero:inst8|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|ULA:inst7|zero:inst8                                              ; work         ;
 ;    |UnidadeControle:inst1|               ; 22 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1                                             ; work         ;
-;       |TEMPORIZADOR:inst|                ; 6 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst                           ; work         ;
+;       |TEMPORIZADOR:inst|                ; 5 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst                           ; work         ;
 ;          |CONT3b:inst|                   ; 3 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst               ; work         ;
 ;             |MUX2b1b:inst1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst1 ; work         ;
 ;             |MUX2b1b:inst2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|CONT3b:inst|MUX2b1b:inst2 ; work         ;
-;          |DECOD3b8b:inst3|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3           ; work         ;
-;       |UC:inst2|                         ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2                                    ; work         ;
+;          |DECOD3b8b:inst3|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|TEMPORIZADOR:inst|DECOD3b8b:inst3           ; work         ;
+;       |UC:inst2|                         ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2                                    ; work         ;
 ;          |CargaAC:inst8|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaAC:inst8                      ; work         ;
 ;          |CargaREM:inst10|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|CargaREM:inst10                    ; work         ;
 ;          |IncrementaPC:inst11|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|IncrementaPC:inst11                ; work         ;
 ;          |Read:inst12|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|Read:inst12                        ; work         ;
+;          |UALNOT:inst27|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|UALNOT:inst27                      ; work         ;
 ;          |gotot0:inst13|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|gotot0:inst13                      ; work         ;
 ;          |sel:inst14|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|UnidadeControle:inst1|UC:inst2|sel:inst14                         ; work         ;
 ;    |register1b:inst19|                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst19                                                 ; work         ;
-;    |register1b:inst20|                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst20                                                 ; work         ;
+;    |register1b:inst20|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register1b:inst20                                                 ; work         ;
 ;    |register8b:inst3|                    ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3                                                  ; work         ;
 ;       |MUX2b1b:instmux1|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux1                                 ; work         ;
 ;       |MUX2b1b:instmux2|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |neander|register8b:inst3|MUX2b1b:instmux2                                 ; work         ;
@@ -416,10 +417,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register8b:inst4|inst10                ; Lost fanout                           ;
 ; register8b:inst4|inst12                ; Lost fanout                           ;
 ; register8b:inst4|inst14                ; Lost fanout                           ;
-; register8b:inst4|inst14~0              ; Merged with register8b:inst4|inst8~0  ;
-; register8b:inst4|inst8~0               ; Merged with register8b:inst4|inst10~0 ;
-; register8b:inst4|inst10~0              ; Merged with register8b:inst4|inst12~0 ;
-; register8b:inst4|inst12~0              ; Merged with register8b:inst4|inst6~0  ;
+; register8b:inst4|inst12~0              ; Merged with register8b:inst4|inst14~0 ;
+; register8b:inst4|inst14~0              ; Merged with register8b:inst4|inst10~0 ;
+; register8b:inst4|inst10~0              ; Merged with register8b:inst4|inst8~0  ;
+; register8b:inst4|inst8~0               ; Merged with register8b:inst4|inst6~0  ;
 ; register8b:inst4|inst6~0               ; Merged with register8b:inst4|inst5~0  ;
 ; register8b:inst4|inst5~0               ; Merged with register8b:inst4|inst3~0  ;
 ; register8b:inst4|inst3~0               ; Merged with register8b:inst4|inst~0   ;
@@ -470,7 +471,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |neander|PC:inst10|inst38                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |neander|PC:inst10|inst35                             ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |neander|register8b:inst3|inst14                      ;
 ; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |neander|ULA:inst7|MUX16b8b:inst14|MUX2b1b:inst|inst3 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
@@ -571,7 +572,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -581,7 +582,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Dec 03 15:08:43 2025
+    Info: Processing started: Wed Dec 03 18:39:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Neander -c Neander
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file neandersecondhalf.bdf
@@ -799,15 +800,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 255 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 256 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 212 logic cells
+    Info (21061): Implemented 213 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4686 megabytes
-    Info: Processing ended: Wed Dec 03 15:08:53 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Wed Dec 03 18:39:13 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

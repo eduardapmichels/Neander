@@ -2436,3 +2436,6 @@ applicable agreement for further details.
 (junction (pt 3856 472))
 (junction (pt 4520 472))
 (junction (pt 5208 424))
+(text "00 - carga" (rect 152 424 211 438)(font "Arial" (font_size 8)))
+(text "01 - incrementa" (rect 152 440 240 454)(font "Arial" (font_size 8)))
+(text "10 - mantém " (rect 152 456 225 470)(font "Arial" (font_size 8)))
