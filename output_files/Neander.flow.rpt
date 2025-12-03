@@ -1,5 +1,5 @@
 Flow report for Neander
-Tue Dec 02 20:43:06 2025
+Tue Dec 02 21:37:43 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 02 20:43:06 2025      ;
+; Flow Status                        ; Successful - Tue Dec 02 21:37:43 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
-; Top-level Entity Name              ; neander                                    ;
+; Top-level Entity Name              ; PC                                         ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 142                                        ;
-;     Total combinational functions  ; 133                                        ;
-;     Dedicated logic registers      ; 45                                         ;
-; Total registers                    ; 45                                         ;
-; Total pins                         ; 54                                         ;
+; Total logic elements               ; 15                                         ;
+;     Total combinational functions  ; 15                                         ;
+;     Dedicated logic registers      ; 8                                          ;
+; Total registers                    ; 8                                          ;
+; Total pins                         ; 20                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,33 +64,34 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2025 20:43:02 ;
+; Start date & time ; 12/02/2025 21:37:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Neander             ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                         ;
-+-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                                               ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 106408471589090.176471898204372                                     ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                  ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/eduar/OneDrive/Documentos/Neander/Neander/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                         ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                           ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                                ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                  ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                   ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                                            ; --            ; neander     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                               ; --            ; neander     ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                              ; --            ; neander     ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                 ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                               ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                        ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                       ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 106408471589090.176472226211136             ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/eduar/git/Neander/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                   ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                        ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                          ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                           ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                        ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                    ; --            ; PC          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                       ; --            ; PC          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                      ; --            ; PC          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                         ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW       ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; PC                                          ; Neander       ; --          ; --             ;
++-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,8 +99,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4666 MB             ; 00:00:04                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

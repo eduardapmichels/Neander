@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 288 280 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "goto_t0" (rect 5 0 42 12)(font "Arial" ))
+	(text "goto_t0" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -318,7 +318,6 @@ applicable agreement for further details.
 	(pt 288 216)
 )
 (connector
-	(text "<<__$DEF_ALIAS421>>" (rect 272 225 284 343)(font "Arial" )(vertical)(invisible))
 	(pt 288 296)
 	(pt 288 216)
 )

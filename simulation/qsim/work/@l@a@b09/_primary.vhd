@@ -3,7 +3,7 @@ use verilog.vl_types.all;
 entity LAB09 is
     port(
         Write           : out    vl_logic;
-        opcode          : in     vl_logic_vector(3 downto 0);
+        opcode          : in     vl_logic_vector(7 downto 0);
         N               : in     vl_logic;
         Z               : in     vl_logic;
         clk             : in     vl_logic;

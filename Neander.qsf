@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY neander
+set_global_assignment -name TOP_LEVEL_ENTITY PC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:53:25  NOVEMBER 22, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -49,7 +49,7 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/eduar/OneDrive/Documentos/Neander/Neander/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/eduar/git/Neander/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
@@ -121,9 +121,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_E11 -to AC00
 set_location_assignment PIN_F11 -to AC01
 set_location_assignment PIN_H12 -to AC02
@@ -161,4 +158,9 @@ set_location_assignment PIN_J6 -to rundebug
 set_location_assignment PIN_G3 -to step
 set_global_assignment -name BDF_FILE register8b.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE neanderregistradoresecargas.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE lab9.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE neander.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
