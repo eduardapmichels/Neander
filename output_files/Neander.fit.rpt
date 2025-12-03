@@ -1,5 +1,5 @@
 Fitter report for Neander
-Wed Dec 03 14:01:35 2025
+Wed Dec 03 15:09:08 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Wed Dec 03 14:01:35 2025      ;
+; Fitter Status                      ; Successful - Wed Dec 03 15:09:08 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
 ; Top-level Entity Name              ; neander                                    ;
@@ -156,7 +156,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -238,7 +238,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/aluno/Downloads/trabalho/output_files/Neander.pin.
+The pin-out file can be found in C:/Users/eduar/git/Neander/output_files/Neander.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -1990,26 +1990,26 @@ Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X10_Y20 to location X20_Y29
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.69 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/aluno/Downloads/trabalho/output_files/Neander.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/eduar/git/Neander/output_files/Neander.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4957 megabytes
-    Info: Processing ended: Wed Dec 03 14:01:35 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4963 megabytes
+    Info: Processing ended: Wed Dec 03 15:09:09 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/aluno/Downloads/trabalho/output_files/Neander.fit.smsg.
+The suppressed messages can be found in C:/Users/eduar/git/Neander/output_files/Neander.fit.smsg.
 
 

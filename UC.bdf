@@ -1848,24 +1848,6 @@ applicable agreement for further details.
 	(pt 1232 872)
 )
 (connector
-	(pt 1224 984)
-	(pt 1240 984)
-)
-(connector
-	(text "add" (rect 1207 1016 1219 1033)(font "Arial" )(vertical))
-	(pt 1224 1048)
-	(pt 1224 984)
-)
-(connector
-	(text "t7" (rect 1217 952 1226 964)(font "Arial" ))
-	(pt 1200 968)
-	(pt 1240 968)
-)
-(connector
-	(pt 1360 968)
-	(pt 1368 968)
-)
-(connector
 	(text "and" (rect 1207 1120 1219 1137)(font "Arial" )(vertical))
 	(pt 1224 1152)
 	(pt 1224 1096)
@@ -2105,4 +2087,22 @@ applicable agreement for further details.
 (connector
 	(pt 1376 1520)
 	(pt 1352 1520)
+)
+(connector
+	(pt 1224 984)
+	(pt 1240 984)
+)
+(connector
+	(text "add" (rect 1207 1016 1219 1033)(font "Arial" )(vertical))
+	(pt 1224 1048)
+	(pt 1224 984)
+)
+(connector
+	(text "t7" (rect 1217 952 1226 964)(font "Arial" ))
+	(pt 1200 968)
+	(pt 1240 968)
+)
+(connector
+	(pt 1360 968)
+	(pt 1368 968)
 )

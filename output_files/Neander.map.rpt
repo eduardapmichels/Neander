@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Neander
-Wed Dec 03 14:01:22 2025
+Wed Dec 03 15:08:53 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -48,7 +48,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 03 14:01:22 2025      ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 03 15:08:53 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Neander                                    ;
 ; Top-level Entity Name              ; neander                                    ;
@@ -158,7 +158,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -168,54 +168,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
-; ROM_Neander.vhd                  ; yes             ; User VHDL File                     ; C:/Users/aluno/Downloads/trabalho/ROM_Neander.vhd                    ;         ;
-; UALY.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALY.bdf                           ;         ;
-; UALOR.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALOR.bdf                          ;         ;
-; UALNOT.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALNOT.bdf                         ;         ;
-; UALAND.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALAND.bdf                         ;         ;
-; UALADD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UALADD.bdf                         ;         ;
-; Write.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Write.bdf                          ;         ;
-; UC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UC.bdf                             ;         ;
-; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/sel.bdf                            ;         ;
-; Read.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Read.bdf                           ;         ;
-; IncrementaPC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/IncrementaPC.bdf                   ;         ;
-; gotot0.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/gotot0.bdf                         ;         ;
-; cargaRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/cargaRI.bdf                        ;         ;
-; CargaREM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaREM.bdf                       ;         ;
-; cargaRDM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/cargaRDM.bdf                       ;         ;
-; CargaPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaPC.bdf                        ;         ;
-; CargaAC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CargaAC.bdf                        ;         ;
-; zero.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/zero.bdf                           ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/ULA.bdf                            ;         ;
-; runstep.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/runstep.bdf                        ;         ;
-; RCA8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/RCA8b.bdf                          ;         ;
-; OR8b.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/OR8b.bdf                           ;         ;
-; NOT8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/NOT8b.bdf                          ;         ;
-; NEG.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/NEG.bdf                            ;         ;
-; Neander.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/Neander.bdf                        ;         ;
-; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX2b1b.bdf                        ;         ;
-; MUX16b8b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX16b8b.bdf                       ;         ;
-; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/FullAdder.bdf                      ;         ;
-; DivClock.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DivClock.bdf                       ;         ;
-; displayG.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayG.bdf                       ;         ;
-; displayF.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayF.bdf                       ;         ;
-; displayE.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayE.bdf                       ;         ;
-; displayD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayD.bdf                       ;         ;
-; displayC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayC.bdf                       ;         ;
-; displayB.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayB.bdf                       ;         ;
-; displayA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/displayA.bdf                       ;         ;
-; DECOD4b16b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DECOD4b16b.bdf                     ;         ;
-; CODULA8b3b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CODULA8b3b.bdf                     ;         ;
-; BCDConverter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/BCDConverter.bdf                   ;         ;
-; AND8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/AND8b.bdf                          ;         ;
-; CONT3b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/CONT3b.bdf                         ;         ;
-; TEMPORIZADOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/TEMPORIZADOR.bdf                   ;         ;
-; DECOD3b8b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/DECOD3b8b.bdf                      ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/PC.bdf                             ;         ;
-; register1b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/register1b.bdf                     ;         ;
-; UnidadeControle.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/UnidadeControle.bdf                ;         ;
-; register8b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/register8b.bdf                     ;         ;
-; MUX3b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Downloads/trabalho/MUX3b1b.bdf                        ;         ;
+; ROM_Neander.vhd                  ; yes             ; User VHDL File                     ; C:/Users/eduar/git/Neander/ROM_Neander.vhd                           ;         ;
+; UALY.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALY.bdf                                  ;         ;
+; UALOR.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALOR.bdf                                 ;         ;
+; UALNOT.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALNOT.bdf                                ;         ;
+; UALAND.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALAND.bdf                                ;         ;
+; UALADD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UALADD.bdf                                ;         ;
+; Write.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Write.bdf                                 ;         ;
+; UC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UC.bdf                                    ;         ;
+; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/sel.bdf                                   ;         ;
+; Read.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Read.bdf                                  ;         ;
+; IncrementaPC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/IncrementaPC.bdf                          ;         ;
+; gotot0.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/gotot0.bdf                                ;         ;
+; cargaRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRI.bdf                               ;         ;
+; CargaREM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaREM.bdf                              ;         ;
+; cargaRDM.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/cargaRDM.bdf                              ;         ;
+; CargaPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaPC.bdf                               ;         ;
+; CargaAC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CargaAC.bdf                               ;         ;
+; zero.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/zero.bdf                                  ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/ULA.bdf                                   ;         ;
+; runstep.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/runstep.bdf                               ;         ;
+; RCA8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/RCA8b.bdf                                 ;         ;
+; OR8b.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/OR8b.bdf                                  ;         ;
+; NOT8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NOT8b.bdf                                 ;         ;
+; NEG.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/NEG.bdf                                   ;         ;
+; Neander.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/Neander.bdf                               ;         ;
+; MUX2b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX2b1b.bdf                               ;         ;
+; MUX16b8b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX16b8b.bdf                              ;         ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/FullAdder.bdf                             ;         ;
+; DivClock.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DivClock.bdf                              ;         ;
+; displayG.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayG.bdf                              ;         ;
+; displayF.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayF.bdf                              ;         ;
+; displayE.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayE.bdf                              ;         ;
+; displayD.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayD.bdf                              ;         ;
+; displayC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayC.bdf                              ;         ;
+; displayB.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayB.bdf                              ;         ;
+; displayA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/displayA.bdf                              ;         ;
+; DECOD4b16b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD4b16b.bdf                            ;         ;
+; CODULA8b3b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CODULA8b3b.bdf                            ;         ;
+; BCDConverter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/BCDConverter.bdf                          ;         ;
+; AND8b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/AND8b.bdf                                 ;         ;
+; CONT3b.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/CONT3b.bdf                                ;         ;
+; TEMPORIZADOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/TEMPORIZADOR.bdf                          ;         ;
+; DECOD3b8b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/DECOD3b8b.bdf                             ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/PC.bdf                                    ;         ;
+; register1b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register1b.bdf                            ;         ;
+; UnidadeControle.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/UnidadeControle.bdf                       ;         ;
+; register8b.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/register8b.bdf                            ;         ;
+; MUX3b1b.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/eduar/git/Neander/MUX3b1b.bdf                               ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -225,7 +225,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_8hv.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Downloads/trabalho/db/altsyncram_8hv.tdf              ;         ;
+; db/altsyncram_8hv.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/eduar/git/Neander/db/altsyncram_8hv.tdf                     ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -571,7 +571,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -581,7 +581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Dec 03 14:01:16 2025
+    Info: Processing started: Wed Dec 03 15:08:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Neander -c Neander
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file neandersecondhalf.bdf
@@ -805,9 +805,9 @@ Info (21057): Implemented 255 device resources after synthesis - the final resou
     Info (21061): Implemented 212 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4676 megabytes
-    Info: Processing ended: Wed Dec 03 14:01:22 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Wed Dec 03 15:08:53 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:04
 
 
