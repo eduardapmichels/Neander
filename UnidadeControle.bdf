@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 600 264 776 280)
+	(rect 584 320 760 336)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "N" (rect 9 0 17 12)(font "Arial" ))
 	(pt 176 8)
@@ -778,6 +778,36 @@ applicable agreement for further details.
 	(pt 696 792)
 )
 (connector
+	(text "op[15]" (rect 1061 568 1091 580)(font "Arial" ))
+	(pt 1048 584)
+	(pt 1112 584)
+)
+(connector
+	(pt 1048 616)
+	(pt 1280 616)
+)
+(connector
+	(pt 768 760)
+	(pt 800 760)
+)
+(connector
+	(pt 1280 840)
+	(pt 680 840)
+)
+(connector
+	(pt 1280 616)
+	(pt 1280 696)
+)
+(connector
+	(pt 1280 696)
+	(pt 1280 840)
+)
+(connector
+	(text "<<__$DEF_ALIAS2034>>" (rect 1086 584 1209 596)(font "Arial" )(invisible))
+	(pt 1048 600)
+	(pt 1144 600)
+)
+(connector
 	(text "op[0]" (rect 890 360 914 372)(font "Arial" ))
 	(pt 952 376)
 	(pt 872 376)
@@ -816,11 +846,6 @@ applicable agreement for further details.
 	(text "op[8]" (rect 890 472 914 484)(font "Arial" ))
 	(pt 952 488)
 	(pt 872 488)
-)
-(connector
-	(text "op[15]" (rect 890 520 920 532)(font "Arial" ))
-	(pt 952 536)
-	(pt 872 536)
 )
 (connector
 	(pt 952 584)
@@ -865,16 +890,6 @@ applicable agreement for further details.
 	(pt 944 568)
 )
 (connector
-	(text "op[10]" (rect 890 488 920 500)(font "Arial" ))
-	(pt 952 504)
-	(pt 872 504)
-)
-(connector
-	(text "op[9]" (rect 890 504 914 516)(font "Arial" ))
-	(pt 952 520)
-	(pt 872 520)
-)
-(connector
 	(pt 704 616)
 	(pt 712 616)
 )
@@ -883,29 +898,12 @@ applicable agreement for further details.
 	(pt 704 616)
 )
 (connector
-	(text "op[15]" (rect 1061 568 1091 580)(font "Arial" ))
-	(pt 1048 584)
-	(pt 1112 584)
-)
-(connector
-	(pt 1048 616)
-	(pt 1280 616)
-)
-(connector
-	(pt 768 760)
-	(pt 800 760)
-)
-(connector
+	(pt 680 600)
 	(pt 712 600)
-	(pt 680 600)
 )
 (connector
+	(pt 680 840)
 	(pt 680 600)
-	(pt 680 840)
-)
-(connector
-	(pt 1280 840)
-	(pt 680 840)
 )
 (connector
 	(pt 440 456)
@@ -916,17 +914,19 @@ applicable agreement for further details.
 	(pt 712 456)
 )
 (connector
-	(pt 1280 616)
-	(pt 1280 696)
+	(text "op[15]" (rect 890 520 920 532)(font "Arial" ))
+	(pt 872 536)
+	(pt 952 536)
 )
 (connector
-	(pt 1280 696)
-	(pt 1280 840)
+	(text "op[10]" (rect 890 488 920 500)(font "Arial" ))
+	(pt 952 504)
+	(pt 872 504)
 )
 (connector
-	(text "<<__$DEF_ALIAS2034>>" (rect 1086 584 1209 596)(font "Arial" )(invisible))
-	(pt 1048 600)
-	(pt 1144 600)
+	(text "op[9]" (rect 890 504 914 516)(font "Arial" ))
+	(pt 952 520)
+	(pt 872 520)
 )
 (junction (pt 480 456))
 (junction (pt 1280 696))

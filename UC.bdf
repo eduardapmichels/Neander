@@ -1898,85 +1898,6 @@ applicable agreement for further details.
 	(pt 1240 1208)
 )
 (connector
-	(text "z" (rect 1212 1696 1216 1708)(font "Arial" ))
-	(pt 1240 1712)
-	(pt 1192 1712)
-)
-(connector
-	(text "t3" (rect 1204 1520 1213 1532)(font "Arial" ))
-	(pt 1240 1536)
-	(pt 1192 1536)
-)
-(connector
-	(text "lda" (rect 1204 1568 1218 1580)(font "Arial" ))
-	(pt 1240 1584)
-	(pt 1192 1584)
-)
-(connector
-	(text "or" (rect 1204 1584 1213 1596)(font "Arial" ))
-	(pt 1240 1600)
-	(pt 1192 1600)
-)
-(connector
-	(text "and" (rect 1204 1600 1221 1612)(font "Arial" ))
-	(pt 1240 1616)
-	(pt 1192 1616)
-)
-(connector
-	(text "add" (rect 1204 1616 1221 1628)(font "Arial" ))
-	(pt 1240 1632)
-	(pt 1192 1632)
-)
-(connector
-	(text "jmp" (rect 1204 1632 1221 1644)(font "Arial" ))
-	(pt 1240 1648)
-	(pt 1192 1648)
-)
-(connector
-	(text "jn" (rect 1204 1648 1212 1660)(font "Arial" ))
-	(pt 1240 1664)
-	(pt 1192 1664)
-)
-(connector
-	(text "n" (rect 1204 1664 1209 1676)(font "Arial" ))
-	(pt 1240 1680)
-	(pt 1192 1680)
-)
-(connector
-	(text "jz" (rect 1204 1680 1211 1692)(font "Arial" ))
-	(pt 1240 1696)
-	(pt 1192 1696)
-)
-(connector
-	(text "nop" (rect 1217 1712 1234 1724)(font "Arial" ))
-	(pt 1240 1728)
-	(pt 1192 1728)
-)
-(connector
-	(text "not" (rect 1208 1728 1223 1740)(font "Arial" ))
-	(pt 1240 1744)
-	(pt 1192 1744)
-)
-(connector
-	(text "t5" (rect 1204 1504 1213 1516)(font "Arial" ))
-	(pt 1240 1520)
-	(pt 1192 1520)
-)
-(connector
-	(text "t7" (rect 1204 1536 1213 1548)(font "Arial" ))
-	(pt 1240 1552)
-	(pt 1192 1552)
-)
-(connector
-	(text "sta" (rect 1204 1552 1219 1564)(font "Arial" ))
-	(pt 1240 1568)
-	(pt 1192 1568)
-)
-(connector
-	(pt 1352 1520)
-	(pt 1376 1520)
-)
-(connector
 	(pt 1224 1344)
 	(pt 1256 1344)
 )
@@ -2105,4 +2026,83 @@ applicable agreement for further details.
 	(text "hlt" (rect 1329 1800 1340 1812)(font "Arial" ))
 	(pt 1392 1816)
 	(pt 1296 1816)
+)
+(connector
+	(text "z" (rect 1212 1696 1216 1708)(font "Arial" ))
+	(pt 1240 1712)
+	(pt 1192 1712)
+)
+(connector
+	(text "t3" (rect 1204 1520 1213 1532)(font "Arial" ))
+	(pt 1240 1536)
+	(pt 1192 1536)
+)
+(connector
+	(text "lda" (rect 1204 1568 1218 1580)(font "Arial" ))
+	(pt 1240 1584)
+	(pt 1192 1584)
+)
+(connector
+	(text "or" (rect 1204 1584 1213 1596)(font "Arial" ))
+	(pt 1240 1600)
+	(pt 1192 1600)
+)
+(connector
+	(text "and" (rect 1204 1600 1221 1612)(font "Arial" ))
+	(pt 1240 1616)
+	(pt 1192 1616)
+)
+(connector
+	(text "add" (rect 1204 1616 1221 1628)(font "Arial" ))
+	(pt 1240 1632)
+	(pt 1192 1632)
+)
+(connector
+	(text "jmp" (rect 1204 1632 1221 1644)(font "Arial" ))
+	(pt 1240 1648)
+	(pt 1192 1648)
+)
+(connector
+	(text "jn" (rect 1204 1648 1212 1660)(font "Arial" ))
+	(pt 1240 1664)
+	(pt 1192 1664)
+)
+(connector
+	(text "n" (rect 1204 1664 1209 1676)(font "Arial" ))
+	(pt 1240 1680)
+	(pt 1192 1680)
+)
+(connector
+	(text "jz" (rect 1204 1680 1211 1692)(font "Arial" ))
+	(pt 1240 1696)
+	(pt 1192 1696)
+)
+(connector
+	(text "nop" (rect 1217 1712 1234 1724)(font "Arial" ))
+	(pt 1240 1728)
+	(pt 1192 1728)
+)
+(connector
+	(text "not" (rect 1208 1728 1223 1740)(font "Arial" ))
+	(pt 1240 1744)
+	(pt 1192 1744)
+)
+(connector
+	(text "t5" (rect 1204 1504 1213 1516)(font "Arial" ))
+	(pt 1240 1520)
+	(pt 1192 1520)
+)
+(connector
+	(text "t7" (rect 1204 1536 1213 1548)(font "Arial" ))
+	(pt 1240 1552)
+	(pt 1192 1552)
+)
+(connector
+	(text "sta" (rect 1204 1552 1219 1564)(font "Arial" ))
+	(pt 1240 1568)
+	(pt 1192 1568)
+)
+(connector
+	(pt 1376 1520)
+	(pt 1352 1520)
 )

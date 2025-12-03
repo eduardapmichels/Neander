@@ -2,11 +2,9 @@ library verilog;
 use verilog.vl_types.all;
 entity neander is
     port(
-        n               : out    vl_logic;
-        z               : out    vl_logic;
+        hlt             : out    vl_logic;
         clk             : in     vl_logic;
         reset           : in     vl_logic;
-        hlt             : out    vl_logic;
         ler             : out    vl_logic;
         seletor         : out    vl_logic;
         cpc             : out    vl_logic;
@@ -14,6 +12,12 @@ entity neander is
         crem            : out    vl_logic;
         cri             : out    vl_logic;
         goto0           : out    vl_logic;
+        Y               : out    vl_logic;
+        ADD             : out    vl_logic;
+        \NOT\           : out    vl_logic;
+        CAC             : out    vl_logic;
+        is_zero         : out    vl_logic;
+        is_negative     : out    vl_logic;
         acumulador      : out    vl_logic_vector(7 downto 0);
         ppcc            : out    vl_logic_vector(7 downto 0);
         rdm             : out    vl_logic_vector(7 downto 0);
